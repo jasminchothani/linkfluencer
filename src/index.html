@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linkfluencer</title>
+    <!-- fevicon icon -->
+    <link rel="icon" type="image/x-icon" href="assets/images/responsivelogo.svg">
+
+    <!-- taiwind css -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+    <!-- output css -->
+    <link href="./assets/css/output.css" rel="stylesheet">
+
+    <!-- swiper css -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> -->
+    <link rel="stylesheet" href="assets/css/swiper.min.css">
+</head>
+
+<body>
+    <header class="bg-blue-blue sticky z-50 py-4 px-4 top-0">
+        <nav class="max-w-[100%] xxl:max-w-[1720px] mx-auto flex justify-between items-center nav-custome flex-wrap">
+            <div class="w-full md:w-auto">
+                <a href="#">
+                    <img src="./assets/images/logo.svg" alt="logo.." width="192" height="50" class="">
+                    <!-- <img src="./assets/images/responsivelogo.svg" alt="logo.." width="50" height="50"class="inline-block md:hidden"> -->
+                </a>
+
+            </div>
+            <div class="w-full sm:w-auto flex justify-center sm:justify-start my-3 sm:my-0">
+                <ul class="relative gap-4 lg:gap-8 flex">
+                    <li class="group">
+                        <a href="#" class="text-white-white group-hover:text-green-green font-semibold">Influencers</a>
+                        <ul
+                            class="hidden absolute bg-offwhite-offwhite shadow-md w-full lg:w-[720px] menu-dropdown p-3 md:p-6 border-lightgrey-lightgrey rounded-b-xl left-1/2 transform -translate-x-1/2 group-hover:block sm:left-0 sm:transform-none sm:overflow-auto sm:w-[283px] lg:left-1/2 lg:-translate-x-1/2 lg:mx-auto">
+                            <div class="flex justify-between flex-wrap">
+                                <div>
+                                    <a href="#"
+                                        class="font-bold inline-block text-base mb-2 leading-5 text-green-green hover:text-blue-blue hover:underline">HOW
+                                        IT WORKS</a>
+                                    <li class="mb-2"><a href="#"
+                                            class="font-[600] text-base md:text-lg leading-5 text-blue-blue hover:text-green-green hover:underline">Find
+                                            collaborations</a></li>
+                                    <li class="mb-2"><a href="#"
+                                            class="font-[600] text-base md:text-lg leading-5 text-blue-blue hover:text-green-green hover:underline">Create
+                                            Smart Links</a></li>
+                                    <li class="mb-2"><a href="#"
+                                            class="font-[600] text-base md:text-lg leading-5 text-blue-blue hover:text-green-green hover:underline">Collaborate
+                                            with Brands</a></li>
+                                </div>
+                                <div>
+                                    <a href="#"
+                                        class="font-bold inline-block text-base mb-2 leading-5 text-green-green hover:text-blue-blue hover:underline"
+                                        class="font-bold">OUR SERVICES</a>
+                                    <li class="mb-2"><a href="#"
+                                            class="font-[600] text-base md:text-lg leading-5 text-blue-blue hover:text-green-green hover:underline">Smart
+                                            Link Creation</a></li>
+                                    <li class="mb-2"><a href="#"
+                                            class="font-[600] text-base md:text-lg leading-5 text-blue-blue hover:text-green-green hover:underline">Bulk
+                                            Link Creation</a></li>
+                                    <li class="mb-2"><a href="#"
+                                            class="font-[600] text-base md:text-lg leading-5 text-blue-blue hover:text-green-green hover:underline">Connect
+                                            Social Media (Coming Soon)</a></li>
+                                    <li class="mb-2"><a href="#"
+                                            class="font-[600] text-base md:text-lg leading-5 text-blue-blue hover:text-green-green hover:underline">Campaign
+                                            (Coming Soon)</a></li>
+                                </div>
+                            </div>
+                        </ul>
+                    </li>
+                    <li><img src="./assets/images/navabr-dot.svg" alt="dot.." width="26" height="26"></li>
+                    <li class="group">
+                        <a href="#" class="text-white-white group-hover:text-green-green font-semibold">Brands</a>
+                        <ul
+                            class="hidden absolute bg-offwhite-offwhite shadow-md w-full lg:w-[720px] menu-dropdown p-3 md:p-6 border-lightgrey-lightgrey rounded-b-xl left-1/2 transform -translate-x-1/2 group-hover:block sm:left-0 sm:transform-none sm:overflow-auto sm:w-[283px] lg:left-1/2 lg:-translate-x-1/2 lg:mx-auto">
+                            <div class="flex justify-between flex-wrap">
+                                <div>
+                                    <a href="#"
+                                        class="font-bold inline-block text-base mb-2 leading-5 text-green-green hover:text-blue-blue hover:underline">HOW
+                                        IT WORKS</a>
+                                    <li class="mb-2"><a href="#"
+                                            class="font-[600] text-base md:text-lg leading-5 text-blue-blue hover:text-green-green hover:underline">Find
+                                            collaborations</a></li>
+                                    <li class="mb-2"><a href="#"
+                                            class="font-[600] text-base md:text-lg leading-5 text-blue-blue hover:text-green-green hover:underline">Create
+                                            Smart Links</a></li>
+                                    <li class="mb-2"><a href="#"
+                                            class="font-[600] text-base md:text-lg leading-5 text-blue-blue hover:text-green-green hover:underline">Collaborate
+                                            with Brands</a></li>
+                                </div>
+                                <div>
+                                    <a href="#"
+                                        class="font-bold inline-block text-base mb-2 leading-5 text-green-green hover:text-blue-blue hover:underline"
+                                        class="font-bold">OUR SERVICES</a>
+                                    <li class="mb-2"><a href="#"
+                                            class="font-[600] text-base md:text-lg leading-5 text-blue-blue hover:text-green-green hover:underline">Smart
+                                            Link Creation</a></li>
+                                    <li class="mb-2"><a href="#"
+                                            class="font-[600] text-base md:text-lg leading-5 text-blue-blue hover:text-green-green hover:underline">Bulk
+                                            Link Creation</a></li>
+                                    <li class="mb-2"><a href="#"
+                                            class="font-[600] text-base md:text-lg leading-5 text-blue-blue hover:text-green-green hover:underline">Connect
+                                            Social Media (Coming Soon)</a></li>
+                                    <li class="mb-2"><a href="#"
+                                            class="font-[600] text-base md:text-lg leading-5 text-blue-blue hover:text-green-green hover:underline">Campaign
+                                            (Coming Soon)</a></li>
+                                </div>
+                            </div>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="w-full sm:w-auto flex justify-center sm:justify-start items-center gap-2 md:gap-6">
+                <div>
+                    <button
+                        class="btn-green text-white-white font-semibold text-base py-2 px-3 lg:py-4 lg:px-6 lg:text-xl leading-6 rounded-md mr-2 md:mr-6">Sign
+                        Up It’s Free</button>
+                    <button
+                        class="btn-transparent text-white-white font-semibold text-base py-2 px-3 lg:py-4 lg:px-6 lg:text-xl leading-6 rounded-md">Login</button>
+                </div>
+                <div>
+                    <select name="language" id="language" class="bg-blue-blue text-white-white outline-none">
+                        <option value="english">En</option>
+                        <option value="english">En</option>
+                    </select>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="py-8 lg:p-py112">
+            <div class="max-w-[100%] xxl:max-w-[1720px] mx-auto flex justify-between px-4 flex-wrap lg:flex-nowrap">
+                <div class="leftside-contentwrpper max-w-[720px] relative">
+                    <div class="before:bg-[url('http://127.0.0.1:5500/src/assets/images/Shapepinktophero.png')] before:absolute before:top-[-172px] before:right-[-140px] before:-z-10 before:hidden before:lg:inline-block before:w-[217px] before:h-[173px] before:bg-no-repeat"></div>
+
+                    <!-- <img src="assets/images/Shapepinktophero.png" alt="img.."
+                        class="absolute top-[-172px] right-[-140px] -z-10 hidden lg:inline-block"> -->
+                    <h1
+                        class="text-3xl md:text-6xl xl:text-llg font-bold mb-6 text-blue-blue md:leading-normal lg:leading-lh108">
+                        Unlock Your Influence with
+                        <sapn class="relative inline-block group z-[1] w-[100%]">
+                            Linkfluencer.io
+                            <span
+                                class="absolute inset-0 bg-green-green opacity-1 z-[-1] left-[-100%] rounded-tl-10 rounded-bl-10 rounded-tr-lg rounded-br-lg"></span>
+                        </sapn>
+                    </h1>
+                    <div class="relative">
+                        <p class="text-blue-blue font-bold text-xl">The only platform to supercharge your subscribers
+                            across social media and get paid instantly for brand Collaboration.</p>
+                        <div class="flex items-start mt-10 flex-wrap">
+                            <div class="relative max-w-[439px] flex-grow mr-4">
+                                <input type="text"
+                                    placeholder="Paste your YouTube, Instagram, Facebook, Telegram, Instagram, Facebook, Telegram"
+                                    class="truncate pr-24 pl-6 w-full py-4 rounded-md border border-lightgrey-lightgrey outline-none shadow-customblackblue mb-2">
+                                <img src="assets/images/Link.svg"
+                                    class="absolute top-1 mt-0.5 right-2 flex items-center pl-3" alt="link.." width="67"
+                                    height="53">
+                            </div>
+                            <button
+                                class="btn-green text-white-white font-semibold text-base px-3 py-4 lg:px-6 lg:text-xl leading-6 rounded-md">Create
+                                Smart Link</button>
+                        </div>
+                        <img src="assets/images/thumbgreen.png" alt="img.."
+                            class="absolute -top-2 left-[-180px] -z-10 hidden lg:inline-block">
+                    </div>
+                </div>
+                <div class="hero-rightsideimg max-w-[800px] mx-auto mt-8 lg:mt-0 lg:mx-0">
+                    <img src="assets/images/hero-ppl.png" alt="img.." class="">
+                </div>
+            </div>
+            <!-- <img src="assets/images/hero-bg.svg" alt=""> -->
+        </section>
+
+        <section class="py-8 lg:p-py112 bg-offwhite-offwhite">
+            <div class="max-w-containerxl mx-auto px-4 2xl:p-0">
+                <div
+                    class="flex justify-between gap-x-16 xl:gap-x-columngap136 items-center flex-nowrap flex-col-reverse lg:flex-row">
+                    <div class="revolutionize-left-content w-auto lg:max-w-[536px] mt-6 lg:mt-0">
+                        <img src="assets/images/revolutionizeleftimg.svg" alt="img.." width="536" height="605">
+                    </div>
+                    <div class="revolutionize-right-content w-auto lg:max-w-[648px]">
+                        <p class="text-blue-blue text-2xl leading-7 font-bold mb-6 underline decoration-1">Revolutionize
+                        </p>
+                        <div
+                            class="text-3xl leading-normal lg:text-sixxl lg:leading-lh67 font-bold text-blue-blue mb-6">
+                            Unlock the <span class="text-green-green"> power of smart links </span> that open directly
+                            in mobile apps.</div>
+                        <p class="text-xl lg:text-2xl leading-7 text-darksilver-darksilver font-semibold">With our smart
+                            linking capability, you can enhance user experience and boost engagement by ensuring that
+                            your links open directly in mobile apps, rather than app browsers. Say goodbye to the hassle
+                            of switching between apps and hello to seamless navigation.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-8 lg:p-py112 bg-green-green">
+            <div class="max-w-containerxl mx-auto px-4 2xl:p-0">
+                
+                <div class="swiper simplify-harness-section mySwiper w-full h-full">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div
+                                class="flex justify-between gap-x-16 xl:gap-x-20 items-center flex-nowrap flex-col lg:flex-row">
+                                <div class="simplify-right-content w-auto lg:max-w-[600px] xl:max-w-[685px]">
+                                    <p
+                                        class="text-white-white text-2xl leading-7 font-bold mb-6 underline decoration-1">
+                                        Simplify</p>
+                                    <div
+                                        class="text-3xl leading-normal lg:text-sixxl lg:leading-lh67 font-bold text-blue-blue mb-6">
+                                        Harness the Potential of Intelligent Links <span class="text-white-white">
+                                            Enhanced Interaction </span> and <span class="text-white-white">Revenue
+                                        </span> </div>
+                                    <p class="text-xl lg:text-2xl leading-7 text-darksilver-darksilver font-semibold">
+                                        With our smart linking capability, you can enhance user experience and boost
+                                        engagement by ensuring that your links open directly in mobile apps, rather than
+                                        app browsers. Say goodbye to the hassle of switching between apps and hello to
+                                        seamless navigation.</p>
+                                </div>
+                                <div
+                                    class="simplify-left-content w-auto lg:max-w-[552px] mt-6 lg:mt-0 py-5 px-0 xl:px-14">
+                                    <img src="assets/images/simplyfyleftimg.svg" alt="img.." width="429" height="502"
+                                        class="mx-auto">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div
+                                class="flex justify-between gap-x-16 xl:gap-x-20 items-center flex-nowrap flex-col lg:flex-row">
+                                <div class="simplify-right-content w-auto lg:max-w-[600px] xl:max-w-[685px]">
+                                    <p
+                                        class="text-white-white text-2xl leading-7 font-bold mb-6 underline decoration-1">
+                                        Simplify</p>
+                                    <div
+                                        class="text-3xl leading-normal lg:text-sixxl lg:leading-lh67 font-bold text-blue-blue mb-6">
+                                        Harness the Potential of Intelligent Links <span class="text-white-white">
+                                            Enhanced Interaction </span> and <span class="text-white-white">Revenue
+                                        </span> </div>
+                                    <p class="text-xl lg:text-2xl leading-7 text-darksilver-darksilver font-semibold">
+                                        With our smart linking capability, you can enhance user experience and boost
+                                        engagement by ensuring that your links open directly in mobile apps, rather than
+                                        app browsers. Say goodbye to the hassle of switching between apps and hello to
+                                        seamless navigation.</p>
+                                </div>
+                                <div
+                                    class="simplify-left-content w-auto lg:max-w-[552px] mt-6 lg:mt-0 py-5 px-0 xl:px-14">
+                                    <img src="assets/images/simplyfyleftimg.svg" alt="img.." width="429" height="502"
+                                        class="mx-auto">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div
+                                class="flex justify-between gap-x-16 xl:gap-x-20 items-center flex-nowrap flex-col lg:flex-row">
+                                <div class="simplify-right-content w-auto lg:max-w-[600px] xl:max-w-[685px]">
+                                    <p
+                                        class="text-white-white text-2xl leading-7 font-bold mb-6 underline decoration-1">
+                                        Simplify</p>
+                                    <div
+                                        class="text-3xl leading-normal lg:text-sixxl lg:leading-lh67 font-bold text-blue-blue mb-6">
+                                        Harness the Potential of Intelligent Links <span class="text-white-white">
+                                            Enhanced Interaction </span> and <span class="text-white-white">Revenue
+                                        </span> </div>
+                                    <p class="text-xl lg:text-2xl leading-7 text-darksilver-darksilver font-semibold">
+                                        With our smart linking capability, you can enhance user experience and boost
+                                        engagement by ensuring that your links open directly in mobile apps, rather than
+                                        app browsers. Say goodbye to the hassle of switching between apps and hello to
+                                        seamless navigation.</p>
+                                </div>
+                                <div
+                                    class="simplify-left-content w-auto lg:max-w-[552px] mt-6 lg:mt-0 py-5 px-0 xl:px-14">
+                                    <img src="assets/images/simplyfyleftimg.svg" alt="img.." width="429" height="502"
+                                        class="mx-auto">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination !relative mt-5 lg:mt-10"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-8 lg:p-py112">
+            <div class="max-w-containerxl mx-auto px-4 2xl:p-0">
+                <div class="mb-10 lg:mb-20">
+                    <p class="text-blue-blue text-2xl leading-7 font-bold mb-6 underline decoration-1">How It Works</p>
+                    <div class="text-3xl leading-normal lg:text-sixxl lg:leading-lh67 font-bold text-blue-blue mb-6">
+                        If you’re
+                        <span class="text-green-green"> a creator, </span>
+                        or
+                        <span class="text-green-green"> a brand </span>
+                        who gets any traffic from any place apart from search, we can really
+                        <span class="text-green-green"> boost your conversions.</span>
+                    </div>
+                    <p class="text-blue-blue text-2xl leading-7 font-bold mb-6">Discover the
+                        Power of Smart Links</p>
+                </div>
+                <div class="flex flex-wrap justify-center flex-col">
+                    <!-- First Row -->
+                    <div class="group flex flex-wrap md:flex-nowrap">
+                        <div class="w-full max-w-[100%] md:max-w-[660px] relative min-h-full lg:min-h-[667px] bg-blue-blue hover:bg-white-white text-white-white hover:text-blue-blue border border-blue-blue rounded-tl-lg rounded-tr-lg md:rounded-tr-none px-6 lg:px-12 py-8 lg:py-16 transition-all duration-300">
+                            <div class="mb-12">
+                               <div class="text-3xl lg:text-fourxl font-bold leading-normal lg:leading-[48px] mb-6">
+                                   How To Publish Campaign
+                                </div>
+                                <p class="text-2xl leading-7 font-semibold ">
+                                    Create Smart Links for Better Results
+                                </p>
+                            </div>
+                            <div>
+                                <img src="assets/images/howitwofirstimg.svg" alt="img.." width="544" height="400">
+                            </div>
+                            <a href="#" class="w-full h-full absolute top-0 left-0 z-10 right-0 bottom-0"></a>
+                        </div>
+                        <div class="w-full max-w-[100%] md:max-w-[660px] relative min-h-full lg:min-h-[667px] bg-white-white hover:bg-blue-blue text-blue-blue hover:text-white-white border border-blue-blue md:rounded-tr-lg px-6 lg:px-12 py-8 lg:py-16 transition-all duration-300">
+                            <div class="mb-12">
+                                <div class="text-3xl lg:text-fourxl font-bold leading-normal lg:leading-[48px] mb-6">
+                                    How To Publish Campaign
+                                 </div>
+                                 <p class="text-2xl leading-7 font-semibold ">
+                                     Create Smart Links for Better Results
+                                 </p>
+                             </div>
+                             <div>
+                                 <img src="assets/images/howitworksecondimg.svg" alt="img.." width="544" height="400">
+                             </div>
+                             <a href="#" class="w-full h-full absolute top-0 left-0 z-10 right-0 bottom-0"></a>
+                        </div>
+                    </div>
+                    <!-- Second Row -->
+                    <div class="group flex flex-wrap md:flex-nowrap">
+                        <div class="w-full max-w-[100%] md:max-w-[660px] relative min-h-full lg:min-h-[667px] bg-white-white hover:bg-blue-blue text-blue-blue hover:text-white-white border border-blue-blue px-6 lg:px-12 py-8 lg:py-16 transition-all duration-300 rounded-bl-none md:rounded-bl-lg">
+                            <div class="mb-12">
+                                <div class="text-3xl lg:text-fourxl font-bold leading-normal lg:leading-[48px] mb-6">
+                                    How To Generate Revenue
+                                 </div>
+                                 <p class="text-2xl leading-7 font-semibold ">
+                                     Create Smart Links for Better Results
+                                 </p>
+                             </div>
+                             <div>
+                                 <img src="assets/images/howitworkyhirdimg.svg" alt="img.." width="544" height="400">
+                             </div>
+                             <a href="#" class="w-full h-full absolute top-0 left-0 z-10 right-0 bottom-0"></a>
+                        </div>
+                        <div class="w-full max-w-[100%] md:max-w-[660px] relative min-h-full lg:min-h-[667px] bg-white-white hover:bg-blue-blue text-blue-blue hover:text-white-white border border-blue-blue px-6 lg:px-12 py-8 lg:py-16 transition-all duration-300 rounded-bl-lg md:rounded-bl-none rounded-br-lg">
+                            <div class="mb-12">
+                                <div class="text-3xl lg:text-fourxl font-bold leading-normal lg:leading-[48px] mb-6">
+                                    How To Connect Influencers And Business Owners
+                                 </div>
+                                 <p class="text-2xl leading-7 font-semibold ">
+                                     Create Smart Links for Better Results
+                                 </p>
+                             </div>
+                             <div>
+                                 <img src="assets/images/howitworkfourimg.svg" alt="img.." width="544" height="400">
+                             </div>
+                             <a href="#" class="w-full h-full absolute top-0 left-0 z-10 right-0 bottom-0"></a>
+                        </div>
+                    </div>
+                </div>                
+            </div>
+        </section>
+
+        <section class="py-8 lg:p-py112 bg-blue-blue">
+            <div class="max-w-containerxl mx-auto px-4 2xl:p-0">
+                <div class="text-center">
+                    <p class="text-white-white text-2xl leading-7 font-bold mb-4 underline decoration-1">How It Works
+                    </p>
+                    <div class="text-3xl leading-normal lg:text-sixxl lg:leading-lh67 font-bold text-white-white mb-6">
+                        Rapid, Approachable, and
+                        <span class="text-green-green"> Dynamic Bio Link </span>
+                        Platform
+                    </div>
+                    <p class="text-white-white text-2xl leading-7 font-bold mb-6">
+                        Linkfluencer.io empowers influencers and brands to create dynamic links that seamlessly direct
+                        users to mobile apps, driving increased interaction and conversions. Our platform transforms the
+                        link process, delivering a user-friendly interface and amplifying the impact of your content.
+                    </p>
+                    <button
+                        class="btn-green text-white-white font-semibold text-base py-2 px-3 lg:py-4 lg:px-6 lg:text-xl leading-6 rounded-md">Get
+                        Started</button>
+                </div>
+                <div class="flex gap-x-8 flex-wrap lg:flex-nowrap">
+                    <div class="w-full lg:w-1/2">
+                        <div class="bg-offwhite-offwhite mt-5 lg:mt-10 rounded-lg p-5 lg:px-7 xl:px-10 lg:py-11">
+                            <div class="card-header min-h-[270px]">
+                                <div
+                                    class="text-2xl lg:text-threexl leading-normal lg:leading-lh38 text-green-green font-bold mb-4">
+                                    Brands:
+                                </div>
+                                <div
+                                    class="line-clamp-2 overflow-hidden text-3xl lg:text-fourxl leading-normal lg:leading-lh48 text-blue-blue font-bold mb-4 h-[auto] lg:h-[96px]">
+                                    Helping Brands Go Public
+                                </div>
+                                <p class="leading-5 text-lg text-blue-blue mb-4 font-bold ">Convert more of your
+                                    audience into customers with our powerful link
+                                    optimization features.</p>
+                                <p class="leading-5 text-lg text-blue-blue mb-4 font-bold ">Our platform helps you
+                                    create compelling calI to action
+                                    and track conversion rates.</p>
+                            </div>
+                            <div class="card-body">
+                                <div class="flex justify-between items-baseline flex-wrap">
+                                    <a href="#">
+                                        <img src="assets/images/arrow-right.svg" alt="img.." width="53" height="51"
+                                            class="hover:opacity-75">
+                                    </a>
+                                    <img src="assets/images/rapidbrandleftimg.svg" alt="img.." width="394" height="365"
+                                        class="max-w-[70%] lg:max-w-[80%] xl:max-w-[100%]">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full lg:w-1/2">
+                        <div class="bg-offwhite-offwhite mt-5 lg:mt-10 rounded-lg p-5 lg:px-7 xl:px-10 lg:py-11">
+                            <div class="card-header min-h-[270px]">
+                                <div
+                                    class="text-2xl lg:text-threexl leading-normal lg:leading-lh38 text-green-green font-bold mb-4">
+                                    Influencers:
+                                </div>
+                                <div
+                                    class="line-clamp-2 overflow-hidden text-3xl lg:text-fourxl leading-normal lg:leading-lh48 text-blue-blue font-bold mb-4 h-[auto] lg:h-[96px]">
+                                    Making everyday a Payday for Influencers
+                                </div>
+                                <p class="leading-5 text-lg text-blue-blue mb-4 font-bold ">Convert more of your
+                                    audience into customers with our powerful link
+                                    optimization features.</p>
+                                <p class="leading-5 text-lg text-blue-blue mb-4 font-bold ">Our platform helps you
+                                    create compelling calI to action
+                                    and track conversion rates.</p>
+                            </div>
+                            <div class="card-body">
+                                <div class="flex justify-between items-baseline flex-wrap">
+                                    <a href="#">
+                                        <img src="assets/images/arrow-right.svg" alt="img.." width="53" height="51"
+                                            class="hover:opacity-75">
+                                    </a>
+
+                                    <img src="assets/images/rapidinfluencerrightimg.svg" alt="img.." width="394"
+                                        height="365" class="max-w-[70%] lg:max-w-[80%] xl:max-w-[100%]">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-8 lg:p-py112">
+            <div class="max-w-containerxl mx-auto px-4 2xl:p-0">
+                <div class="text-center mb-10 lg:mb-20">
+                    <p class="text-blue-blue text-2xl leading-7 font-bold mb-4 underline decoration-1">Customer Stories
+                    </p>
+                    <div class="text-3xl leading-normal lg:text-sixxl lg:leading-lh67 font-bold text-blue-blue mb-6">
+                        Don’t just take
+                        <span class="text-green-green"> our word </span>
+                        for it
+                    </div>
+                </div>
+        
+                <div class="swiper testimonial-slider mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div
+                                class="flex justify-between gap-x-16 xl:gap-x-columngap136 items-center flex-nowrap flex-col lg:flex-row">
+                                <div class="w-auto lg:max-w-[536px] mt-2 lg:mt-0">
+                                    <img src="assets/images/testimonialimg.svg" alt="img.." width="536" height="640">
+                                </div>
+                                <div class="w-auto lg:max-w-[648px] mt-4 md:mt-0">
+                                    <div class="flex gap-1 mb-8">
+                                        <img src="assets/images/starrating.svg" alt="star.." width="20" height="18.89">
+                                        <img src="assets/images/starrating.svg" alt="star.." width="20" height="18.89">
+                                        <img src="assets/images/starrating.svg" alt="star.." width="20" height="18.89">
+                                        <img src="assets/images/starrating.svg" alt="star.." width="20" height="18.89">
+                                        <img src="assets/images/starrating.svg" alt="star.." width="20" height="18.89">
+                                    </div>
+
+                                    <p class="text-blue-blue text-2xl leading-7 font-bold mb-8">"A
+                                        testimonial that shares a customer's positive experience with your company and
+                                        answers
+                                        potential customer doubts. Showcase testimonials from a similar demographic to
+                                        your
+                                        customers."
+                                    </p>
+                                    <div class="flex items-cente flex-col sm:flex-row">
+                                        <div>
+                                            <div
+                                                class="text-2xl lg:text-threexl leading-normal lg:leading-lh38 text-blue-blue font-bold">
+                                                Name Surname</div>
+                                            <p class="text-2xl leading-7 font-bold text-green-green">Position, Company
+                                                name</p>
+                                        </div>
+                                        <div class="border-l border-blue-blue h-auto mx-5 hidden sm:inline-block"></div>
+                                        <div class="my-auto">
+                                            <img src="assets/images/webflowimg.svg" alt="webflow.." width="120"
+                                                height="40">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div
+                                class="flex justify-between gap-x-16 xl:gap-x-columngap136 items-center flex-nowrap flex-col lg:flex-row">
+                                <div class="w-auto lg:max-w-[536px] mt-2 lg:mt-0">
+                                    <img src="assets/images/testimonialimg.svg" alt="img.." width="536" height="640">
+                                </div>
+                                <div class="w-auto lg:max-w-[648px] mt-4 md:mt-0">
+                                    <div class="flex gap-1 mb-8">
+                                        <img src="assets/images/starrating.svg" alt="star.." width="20" height="18.89">
+                                        <img src="assets/images/starrating.svg" alt="star.." width="20" height="18.89">
+                                        <img src="assets/images/starrating.svg" alt="star.." width="20" height="18.89">
+                                        <img src="assets/images/starrating.svg" alt="star.." width="20" height="18.89">
+                                        <img src="assets/images/starrating.svg" alt="star.." width="20" height="18.89">
+                                    </div>
+
+                                    <p class="text-blue-blue text-2xl leading-7 font-bold mb-8">"A
+                                        testimonial that shares a customer's positive experience with your company and
+                                        answers
+                                        potential customer doubts. Showcase testimonials from a similar demographic to
+                                        your
+                                        customers."
+                                    </p>
+                                    <div class="flex items-cente flex-col sm:flex-row">
+                                        <div>
+                                            <div
+                                                class="text-2xl lg:text-threexl leading-normal lg:leading-lh38 text-blue-blue font-bold">
+                                                Name Surname</div>
+                                            <p class="text-2xl leading-7 font-bold text-green-green">Position, Company
+                                                name</p>
+                                        </div>
+                                        <div class="border-l border-blue-blue h-auto mx-5 hidden sm:inline-block"></div>
+                                        <div class="my-auto">
+                                            <img src="assets/images/webflowimg.svg" alt="webflow.." width="120"
+                                                height="40">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div
+                                class="flex justify-between gap-x-16 xl:gap-x-columngap136 items-center flex-nowrap flex-col lg:flex-row">
+                                <div class="w-auto lg:max-w-[536px] mt-2 lg:mt-0">
+                                    <img src="assets/images/testimonialimg.svg" alt="img.." width="536" height="640">
+                                </div>
+                                <div class="w-auto lg:max-w-[648px] mt-4 md:mt-0">
+                                    <div class="flex gap-1 mb-8">
+                                        <img src="assets/images/starrating.svg" alt="star.." width="20" height="18.89">
+                                        <img src="assets/images/starrating.svg" alt="star.." width="20" height="18.89">
+                                        <img src="assets/images/starrating.svg" alt="star.." width="20" height="18.89">
+                                        <img src="assets/images/starrating.svg" alt="star.." width="20" height="18.89">
+                                        <img src="assets/images/starrating.svg" alt="star.." width="20" height="18.89">
+                                    </div>
+
+                                    <p class="text-blue-blue text-2xl leading-7 font-bold mb-8">"A
+                                        testimonial that shares a customer's positive experience with your company and
+                                        answers
+                                        potential customer doubts. Showcase testimonials from a similar demographic to
+                                        your
+                                        customers."
+                                    </p>
+                                    <div class="flex items-cente flex-col sm:flex-row">
+                                        <div>
+                                            <div
+                                                class="text-2xl lg:text-threexl leading-normal lg:leading-lh38 text-blue-blue font-bold">
+                                                Name Surname</div>
+                                            <p class="text-2xl leading-7 font-bold text-green-green">Position, Company
+                                                name</p>
+                                        </div>
+                                        <div class="border-l border-blue-blue h-auto mx-5 hidden sm:inline-block"></div>
+                                        <div class="my-auto">
+                                            <img src="assets/images/webflowimg.svg" alt="webflow.." width="120"
+                                                height="40">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div
+                                class="flex justify-between gap-x-16 xl:gap-x-columngap136 items-center flex-nowrap flex-col lg:flex-row">
+                                <div class="w-auto lg:max-w-[536px] mt-2 lg:mt-0">
+                                    <img src="assets/images/testimonialimg.svg" alt="img.." width="536" height="640">
+                                </div>
+                                <div class="w-auto lg:max-w-[648px] mt-4 md:mt-0">
+                                    <div class="flex gap-1 mb-8">
+                                        <img src="assets/images/starrating.svg" alt="star.." width="20" height="18.89">
+                                        <img src="assets/images/starrating.svg" alt="star.." width="20" height="18.89">
+                                        <img src="assets/images/starrating.svg" alt="star.." width="20" height="18.89">
+                                        <img src="assets/images/starrating.svg" alt="star.." width="20" height="18.89">
+                                        <img src="assets/images/starrating.svg" alt="star.." width="20" height="18.89">
+                                    </div>
+
+                                    <p class="text-blue-blue text-2xl leading-7 font-bold mb-8">"A
+                                        testimonial that shares a customer's positive experience with your company and
+                                        answers
+                                        potential customer doubts. Showcase testimonials from a similar demographic to
+                                        your
+                                        customers."
+                                    </p>
+                                    <div class="flex items-cente flex-col sm:flex-row">
+                                        <div>
+                                            <div
+                                                class="text-2xl lg:text-threexl leading-normal lg:leading-lh38 text-blue-blue font-bold">
+                                                Name Surname</div>
+                                            <p class="text-2xl leading-7 font-bold text-green-green">Position, Company
+                                                name</p>
+                                        </div>
+                                        <div class="border-l border-blue-blue h-auto mx-5 hidden sm:inline-block"></div>
+                                        <div class="my-auto">
+                                            <img src="assets/images/webflowimg.svg" alt="webflow.." width="120"
+                                                height="40">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative flex gap-x-4 mt-6">                        
+                        <div class="swiper-button-next !relative !-right-16 ml-2 !opacity-100 !mt-0 !w-12 !h-12 bg-blue-blue hover:bg-white-white border border-blue-blue rounded-full after:hidden transition duration-300 group" tabindex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-db8b11d3410f10ec0d" aria-disabled="false">
+                            <img src="assets/images/righticontestimonial.svg" alt="Next" class="w-6 h-6 mx-auto my-auto transition duration-300 filter-none group-hover:filter invert-[1] brightness-[1]">
+                        </div>
+                        <div class="swiper-button-prev !relative !mt-0 !-left-16 !w-12 !h-12 !opacity-100 bg-white-white hover:bg-blue-blue border border-blue-blue rounded-full after:hidden group" tabindex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-db8b11d3410f10ec0d" aria-disabled="false">
+                            <img src="assets/images/leftIcontestimonial.svg" alt="Next" class="w-6 h-6 mx-auto my-auto transition duration-300 filter-none group-hover:filter invert-[1] brightness-[0.1]">
+                        </div>
+                    </div>                                    
+                </div>
+            </div>
+        </section>
+
+        <section class="py-8 lg:py-14 bg-green-green">
+            <div class="max-w-containerxl mx-auto px-4 2xl:p-0">
+                <div class="flex justify-between items-center flex-wrap md:flex-nowrap">
+                    <div class="max-w-full w-full md:max-w-[760px]">
+                        <div
+                            class="text-3xl leading-normal lg:text-sixxltwo lg:leading-lh76 font-bold text-blue-blue mb-6">
+                            Fueling creativity with visionary <span class="text-white-white"> partners.</span></div>
+                        <button
+                            class="btn-blue hover:bg-green-green text-white-white font-semibold text-base px-3 py-4 lg:px-6 lg:text-xl leading-6 rounded-md">Register
+                            Now</button>
+                    </div>
+                    <div class="max-w-full w-full md:max-w-[395px]">
+                        <img src="assets/images/partnersimg.svg" alt="img.." width="395" height="243"
+                            class="max-w-[70%] lg:max-w-[100%] mt-4 lg:mt-0 mx-auto md:ml-auto lg:mx-0">
+                    </div>
+                </div>
+            </div>
+        </section>       
+    </main>
+
+    <footer class="footer py-8 lg:py-20 bg-blue-blue">
+        <div class="max-w-containerxl mx-auto px-4 2xl:px-0 pb-5 lg:pb-20">
+            <div class="pree-footer">
+                <a href="#">
+                    <img alt="website footer logo.." class="mx-auto d-block" src="assets/images/footerimg.svg">
+                </a>
+            </div>
+        </div>
+        <hr class="pree-footerhr border-t border-green-green">
+        <div class="max-w-containerxl mx-auto px-4 2xl:px-0 py-5 lg:py-20">
+            <div class="flex flex-col lg:flex-row gap-x-20 justify-between">
+                <div class="lg:max-w-[716px]">
+                    <div class="footer-form">
+                        <p class="text-2xl leading-7 font-bold capitalize text-green-green mb-6">Join Our Newsletter
+                            To Stay Up To Date On Features And Releases.</p>
+                        <div>
+                            <form class="flex gap-x-4 flex-wrap">
+                                <input
+                                    class="max-w-[510px] w-[100%] mb-4 bg-cultured-cultured border-blue-blue py-3 px-6 rounded-md outline-none"
+                                    placeholder="Enter your email" type="text" name="email">
+                                <button type="submit"
+                                    class="px-10 w-[190px] mb-4 py-4 rounded-md bg-greendark-greendark text-cultured-cultured font-bold text-2xl leading-7 hover:text-white-white hover:bg-green-green">Subscribe</button>
+                            </form>
+                            <p class="mt-3 text-sm text-white font-bold leading-4 mb-6 opacity-70">By subscribing
+                                you agree to our Privacy Policy and provide consent to receive updates from our
+                                company.</p>
+                            <div class="flex items-center">
+                                <div class="mt-2 flex gap-x-10 flex-wrap">
+                                    <div class="flex gap-x-4 items-center mb-4 lg:mb-0">
+                                        <img src="assets/images/callicon.svg" alt="call.." class="" width="30"
+                                            height="30">
+                                        <a class="text-sm leading-6 text-white font-bold opacity-70 hover:text-green-green"
+                                            href="phone:7458965874">(+91 - 7458965874)</a>
+                                    </div>
+                                    <div class="flex gap-x-4 items-center mb-4 lg:mb-0">
+                                        <img src="assets/images/email.svg" alt="call.." class="" width="30"
+                                            height="30">
+                                        <a class="text-sm leading-6 text-white font-bold opacity-70 hover:text-green-green"
+                                            href="mailto:info@linkfluencer.io">info@linkfluencer.io</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:max-w-[524px]">
+                    <div class="flex justify-between gap-x-10 mt-5 lg:mt-0 flex-wrap lg:flex-nowrap">
+                        <div class="min-w-max lg:min-w-36">
+                            <h4 class="text-2xl leading-7 font-bold capitalize text-green-green mb-4">Company</h4>
+                            <ul>
+                                <li class="mb-2"><a
+                                        class="text-sm text-white font-bold leading-4 mb-6 opacity-70 hover:text-green-green"
+                                        href="#">Our partners</a></li>
+                                <li class="mb-2"><a
+                                        class="text-sm text-white font-bold leading-4 mb-6 opacity-70 hover:text-green-green"
+                                        href="#">About Us</a></li>
+                                <li class="mb-2"><a
+                                        class="text-sm text-white font-bold leading-4 mb-6 opacity-70 hover:text-green-green"
+                                        href="#">Contact Us</a></li>
+                                <li class="mb-2"><a
+                                        class="text-sm text-white font-bold leading-4 mb-6 opacity-70 hover:text-green-green"
+                                        href="#">Services</a></li>
+                                <li class="mb-2"><a
+                                        class="text-sm text-white font-bold leading-4 mb-6 opacity-70 hover:text-green-green"
+                                        href="#">What’s New</a></li>
+                            </ul>
+                        </div>
+                        <div class="min-w-max lg:min-w-36">
+                            <h4 class="text-2xl leading-7 font-bold capitalize text-green-green mb-4">Support</h4>
+                            <ul>
+                                <li class="mb-2"><a
+                                        class="text-sm text-white font-bold leading-4 mb-6 opacity-70 hover:text-green-green"
+                                        href="#">FAQs</a></li>
+                                <li class="mb-2"><a
+                                        class="text-sm text-white font-bold leading-4 mb-6 opacity-70 hover:text-green-green"
+                                        href="#">Getting Started</a></li>
+                            </ul>
+                        </div>
+                        <div class="min-w-max lg:min-w-36">
+                            <h4 class="text-2xl leading-7 font-bold capitalize text-green-green mb-4">Social Links
+                            </h4>
+                            <ul>
+                                <li class="mb-2">
+                                    <a class="text-sm text-white font-bold leading-4 mb-6 opacity-70 hover:text-green-green flex items-center"
+                                        href="#">
+                                        <img src="assets/images/Facebookfooter.svg" width="30" height="30"
+                                            alt="img.." class="mr-4">
+                                        Facebook
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a class="text-sm text-white font-bold leading-4 mb-6 opacity-70 hover:text-green-green flex items-center"
+                                        href="#">
+                                        <img src="assets/images/Instagramfooter.svg" width="30" height="30"
+                                            alt="img.." class="mr-4">Instagram</a>
+                                </li>
+                                <li class="mb-2">
+                                    <a class="text-sm text-white font-bold leading-4 mb-6 opacity-70 hover:text-green-green flex items-center"
+                                        href="#">
+                                        <img src="assets/images/xfooter.svg" width="30" height="30" alt="img.."
+                                            class="mr-4">Twitter</a>
+                                </li>
+                                <li class="mb-2">
+                                    <a class="text-sm text-white font-bold leading-4 mb-6 opacity-70 hover:text-green-green flex items-center"
+                                        href="#">
+                                        <img src="assets/images/LinkedInfooter.svg" width="30" height="30"
+                                            alt="img.." class="mr-4">LinkedIn</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="pree-footerhr border-t border-green-green">
+        <div class="max-w-containerxl mx-auto px-4 2xl:p-0">
+            <div class="flex justify-between pt-4 lg:pt-8 items-center flex-wrap">
+                <div>
+                    <p class="text-sm text-white font-bold leading-4 opacity-70">© Linkfluencer. 2024 All Rights
+                        Reserved.</p>
+                </div>
+                <div>
+                    <ul class="flex justify-between flex-wrap items-center">
+                        <li class="me-4"><a
+                                class="text-sm text-white font-bold leading-4 mb-6 opacity-70 hover:text-green-green"
+                                href="/privacy-policy">Privacy Policy</a></li>
+                        <li class="me-4"><a
+                                class="text-sm text-white font-bold leading-4 mb-6 opacity-70 hover:text-green-green"
+                                href="/terms-conditions">Terms of Service</a></li>
+                        <li><a class="text-sm text-white font-bold leading-4 mb-6 opacity-70 hover:text-green-green"
+                                href="#">Cookies Settings</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
+    <script src="assets/js/swiper.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

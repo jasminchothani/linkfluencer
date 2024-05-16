@@ -1,0 +1,11 @@
+@import url('./typograpy.css');
+@import url('./general.css');
+@import url('./header.css');
+@import url('./footer.css');
+@import url('./variable.css');
+@import url('./mixin.css');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+

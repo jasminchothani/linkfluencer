@@ -1,0 +1,16 @@
+:root {
+    --blue: #020D3A;
+    --green: #20E086;
+    --white: #FFFFFF;
+    --lightgrey:#B3B3B2;
+    --offwhite: #FFFFF6;
+    --darksilver: #6D6D6C;
+    --cultured: #F4F4F4;
+
+    /* hover effects */
+    --greentwo: #20E086CC;
+    --greendark: #20E086B2;
+    /* box shadow */
+    --blackblue: #00000026;
+    /* --blackblue: 0, 0, 0, 0.15; */
+}

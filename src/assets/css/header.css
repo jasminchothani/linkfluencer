@@ -1,0 +1,27 @@
+/* .group:hover .group-hover\:visible {
+    visibility: visible;
+  }
+  
+  .group2:hover .group2-hover\:visible {
+    visibility: visible;
+  }
+  
+  .left-20 {
+    left: 5rem;
+  } */
+
+.nav-custome .btn-transparent{
+  background-color: transparent;
+  border: 1px solid var(--white);
+  /* padding: 16px 24px; */
+}
+.nav-custome .btn-transparent:hover{
+  border: 1px solid var(--green);
+  background-color: var(--green);
+}
+
+.menu-dropdown{
+  background: #FFFFF6;
+  /* border: 1px solid #B3B3B2; */
+  /* border-radius: 0px 0px 10px 10px; */
+}

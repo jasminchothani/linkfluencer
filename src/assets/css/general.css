@@ -1,0 +1,89 @@
+/* npx tailwindcss -i ./src/assets/css/styles.css -o ./src/assets/css/output.css --watch */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Avenir LT Std', sans-serif;
+    background-color: var(--offwhite);
+    color: var(--blue);
+}
+
+ul li{
+    padding: 0;
+    margin: 0;
+}
+
+/* buttons css */
+.btn-green{
+    border: 1px solid var(--green);
+    background-color: var(--green);
+    /* padding: 16px 24px; */
+}
+.btn-green:hover{
+    border: 1px solid var(--greentwo);
+    background-color: var(--greentwo);
+}
+.btn-transparent{
+    background-color: transparent;
+    border: 1px solid var(--white);
+    /* padding: 16px 24px; */
+}
+.btn-transparent:hover{
+    border: 1px solid var(--green);
+    background-color: var(--green);
+}
+.btn-blue{
+    border: 1px solid var(--blue);
+    background-color: var(--blue);
+    /* padding: 16px 24px; */
+}
+
+/* .p-py112{
+    background-image: url(../images/hero-bg.svg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+} */
+
+/* .swiper {
+    width: 100%;
+    height: 100%;
+  } */
+
+  /*.swiper-slide {
+     text-align: center; 
+    font-size: 18px; 
+    background: #fff; 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+  } */
+/* 
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  } */
+
+  /* harnesh section */
+.swiper-pagination-bullet{
+    height: 16px !important;
+    width: 16px !important;
+    background: var(--white) !important;
+    opacity: 1 !important;
+}
+.swiper-pagination-bullet.swiper-pagination-bullet-active{
+    background: var(--blue) !important;
+}
+
+
+/* testinomial section */
+/* .swiper-button-next, .swiper-button-prev{
+    position: relative !important;
+}
+.swiper-button-next{
+    left: 50px !important;
+} */
