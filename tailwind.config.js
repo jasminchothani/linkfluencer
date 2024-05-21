@@ -46,6 +46,9 @@ module.exports = {
         bluehover: {
           bluehover: 'var(--bluehover)',
         },
+        bluepurple: {
+          bluepurple: 'var(--bluepurple)',
+        }
       },
       // backgroundColor: {
       //   before: 'var(--green)',
