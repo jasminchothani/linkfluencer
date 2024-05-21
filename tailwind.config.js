@@ -16,6 +16,7 @@ module.exports = {
         // 1170: '1170px',
         // 95: '95%',
         containerxl: '1320px', 
+        containerxxl: '1720px',
       },
       colors: {
         blue: {
@@ -36,12 +37,15 @@ module.exports = {
         darksilver: {
           darksilver: 'var(--darksilver)',
         },
+        greendark: {
+          greendark: 'var(--greendark)',
+        },
         cultured: {
           cultured: 'var(--cultured)',
         },
-        greendark:{
-          greendark: 'var(--greendark)',
-        }
+        bluehover: {
+          bluehover: 'var(--bluehover)',
+        },
       },
       // backgroundColor: {
       //   before: 'var(--green)',
@@ -57,7 +61,8 @@ module.exports = {
         sixxltwo: '64px',
       },
       lineHeight: {
-        lh: '108px',
+        lh120: '120px',
+        lh108: '108px',
         lh67: '67.2px',
         lh38: '38.4px',
         lh48: '48px',
@@ -71,7 +76,7 @@ module.exports = {
       },
       screens: {
         xxl: '1500px',
-      },
+      }
     }
     ,
   },

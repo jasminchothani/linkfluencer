@@ -288,6 +288,7 @@ ul li{
   --greendark: #20E086B2;
   /* box shadow */
   --blackblue: #00000026;
+  --bluehover: #020D3ACC;
   /* --blackblue: 0, 0, 0, 0.15; */
 }
 
@@ -1149,6 +1150,10 @@ video {
   height: 100%;
 }
 
+.max-h-\[110px\] {
+  max-height: 110px;
+}
+
 .min-h-\[270px\] {
   min-height: 270px;
 }
@@ -1163,10 +1168,6 @@ video {
 
 .w-6 {
   width: 1.5rem;
-}
-
-.w-\[100\%\] {
-  width: 100%;
 }
 
 .w-\[190px\] {
@@ -1184,10 +1185,6 @@ video {
 .min-w-max {
   min-width: -moz-max-content;
   min-width: max-content;
-}
-
-.max-w-\[100\%\] {
-  max-width: 100%;
 }
 
 .max-w-\[439px\] {
@@ -1334,6 +1331,10 @@ video {
   border-radius: 0.375rem;
 }
 
+.rounded-\[5px\] {
+  border-radius: 5px;
+}
+
 .rounded-b-xl {
   border-bottom-right-radius: 0.75rem;
   border-bottom-left-radius: 0.75rem;
@@ -1465,6 +1466,11 @@ video {
   padding-bottom: 2rem;
 }
 
+.py-\[19px\] {
+  padding-top: 19px;
+  padding-bottom: 19px;
+}
+
 .pb-5 {
   padding-bottom: 1.25rem;
 }
@@ -1481,8 +1487,16 @@ video {
   padding-right: 6rem;
 }
 
+.pr-8 {
+  padding-right: 2rem;
+}
+
 .pt-4 {
   padding-top: 1rem;
+}
+
+.pt-2 {
+  padding-top: 0.5rem;
 }
 
 .text-center {
@@ -1519,10 +1533,6 @@ video {
   line-height: 1.75rem;
 }
 
-.font-\[600\] {
-  font-weight: 600;
-}
-
 .font-bold {
   font-weight: 700;
 }
@@ -1557,6 +1567,14 @@ video {
 
 .leading-normal {
   line-height: 1.5;
+}
+
+.leading-lh120 {
+  line-height: 120px;
+}
+
+.\!leading-7 {
+  line-height: 1.75rem !important;
 }
 
 .text-blue-blue {
@@ -1704,9 +1722,9 @@ video {
   width: 217px;
 }
 
-.before\:bg-\[url\(\'http\:\/\/127\.0\.0\.1\:5500\/src\/assets\/images\/Shapepinktophero\.png\'\)\]::before {
+.before\:bg-\[url\(\'\.\.\/\.\.\/assets\/images\/Shapepinktophero\.png\'\)\]::before {
   content: var(--tw-content);
-  background-image: url('http://127.0.0.1:5500/src/assets/images/Shapepinktophero.png');
+  background-image: url('../../assets/images/Shapepinktophero.png');
 }
 
 .before\:bg-no-repeat::before {
@@ -1721,6 +1739,10 @@ video {
 
 .hover\:bg-blue-blue:hover {
   background-color: var(--blue);
+}
+
+.hover\:bg-bluehover-bluehover:hover {
+  background-color: var(--bluehover);
 }
 
 .hover\:bg-green-green:hover {
@@ -1745,6 +1767,10 @@ video {
 
 .hover\:underline:hover {
   text-decoration-line: underline;
+}
+
+.hover\:opacity-100:hover {
+  opacity: 1;
 }
 
 .hover\:opacity-75:hover {
@@ -1933,10 +1959,6 @@ video {
     min-width: 9rem;
   }
 
-  .lg\:max-w-\[100\%\] {
-    max-width: 100%;
-  }
-
   .lg\:max-w-\[524px\] {
     max-width: 524px;
   }
@@ -1963,6 +1985,10 @@ video {
 
   .lg\:max-w-\[80\%\] {
     max-width: 80%;
+  }
+
+  .lg\:max-w-full {
+    max-width: 100%;
   }
 
   .lg\:-translate-x-1\/2 {
@@ -2026,8 +2052,17 @@ video {
     padding-bottom: 1rem;
   }
 
+  .lg\:px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
   .lg\:pb-20 {
     padding-bottom: 5rem;
+  }
+
+  .lg\:pr-16 {
+    padding-right: 4rem;
   }
 
   .lg\:pt-8 {
@@ -2064,6 +2099,10 @@ video {
     line-height: 48px;
   }
 
+  .lg\:leading-lh108 {
+    line-height: 108px;
+  }
+
   .lg\:leading-lh38 {
     line-height: 38.4px;
   }
@@ -2087,16 +2126,12 @@ video {
 }
 
 @media (min-width: 1280px) {
-  .xl\:max-w-\[100\%\] {
-    max-width: 100%;
-  }
-
   .xl\:max-w-\[685px\] {
     max-width: 685px;
   }
 
-  .xl\:max-w-\[89\.6\%\] {
-    max-width: 89.6%;
+  .xl\:max-w-full {
+    max-width: 100%;
   }
 
   .xl\:gap-x-20 {
@@ -2125,11 +2160,7 @@ video {
 }
 
 @media (min-width: 1500px) {
-  .xxl\:max-w-\[89\.6\%\] {
-    max-width: 89.6%;
-  }
-
-  .xxl\:max-w-\[1720px\] {
+  .xxl\:max-w-containerxxl {
     max-width: 1720px;
   }
 }
