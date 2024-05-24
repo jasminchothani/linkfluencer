@@ -48,13 +48,20 @@ module.exports = {
         },
         bluepurple: {
           bluepurple: 'var(--bluepurple)',
-        }
+        },
+        ufogreen: {
+          ufogreen: 'var(--ufogreen)',
+        },
+        paleviolet: {
+          paleviolet: 'var(--paleviolet)',
+        },
       },
       // backgroundColor: {
       //   before: 'var(--green)',
       // },
       padding: {
         py112: '112px 0',
+        py16px100: '16px 100px'
       },
       fontSize: {
         llg: '96px',
@@ -66,10 +73,11 @@ module.exports = {
       lineHeight: {
         lh120: '120px',
         lh108: '108px',
-        lh67: '67.2px',
-        lh38: '38.4px',
-        lh48: '48px',
+        lh96: '96px',
         lh76: '76px',
+        lh67: '67.2px',
+        lh48: '48px',
+        lh38: '38.4px',
       },
       boxShadow: {
        customblackblue: '0px 8px 20px 0px var(--blackblue)',
@@ -78,7 +86,10 @@ module.exports = {
         columngap136: '136px',
       },
       screens: {
+        mmd: '836px',
+        llg: '1084px',
         xxl: '1500px',
+        xxll: '1920px',
       }
     }
     ,
