@@ -859,6 +859,12 @@ video {
   width: 100%;
 }
 
+@media (min-width: 594px) {
+  .container {
+    max-width: 594px;
+  }
+}
+
 @media (min-width: 640px) {
   .container {
     max-width: 640px;
@@ -945,6 +951,11 @@ video {
   inset: 0px;
 }
 
+.inset-y-0 {
+  top: 0px;
+  bottom: 0px;
+}
+
 .\!-left-16 {
   left: -4rem !important;
 }
@@ -985,6 +996,10 @@ video {
   right: 0.25rem;
 }
 
+.right-2 {
+  right: 0.5rem;
+}
+
 .right-\[-140px\] {
   right: -140px;
 }
@@ -1021,6 +1036,10 @@ video {
   z-index: 1;
 }
 
+.m-auto {
+  margin: auto;
+}
+
 .mx-5 {
   margin-left: 1.25rem;
   margin-right: 1.25rem;
@@ -1039,6 +1058,11 @@ video {
 .my-4 {
   margin-top: 1rem;
   margin-bottom: 1rem;
+}
+
+.my-8 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .my-auto {
@@ -1157,6 +1181,10 @@ video {
   height: 1.5rem;
 }
 
+.h-\[2px\] {
+  height: 2px;
+}
+
 .h-\[auto\] {
   height: auto;
 }
@@ -1238,8 +1266,16 @@ video {
   max-width: 100%;
 }
 
+.max-w-screen-sm {
+  max-width: 640px;
+}
+
 .max-w-screen-xxll {
   max-width: 1920px;
+}
+
+.flex-shrink-0 {
+  flex-shrink: 0;
 }
 
 .flex-grow {
@@ -1350,6 +1386,10 @@ video {
   border-radius: 10px;
 }
 
+.rounded-\[2px\] {
+  border-radius: 2px;
+}
+
 .rounded-\[5px\] {
   border-radius: 5px;
 }
@@ -1395,6 +1435,10 @@ video {
   border-width: 1px;
 }
 
+.border-0 {
+  border-width: 0px;
+}
+
 .border-l {
   border-left-width: 1px;
 }
@@ -1413,6 +1457,10 @@ video {
 
 .border-lightgrey-lightgrey {
   border-color: var(--lightgrey);
+}
+
+.border-white-white {
+  border-color: var(--white);
 }
 
 .bg-blue-500 {
@@ -1438,6 +1486,10 @@ video {
 
 .bg-offwhite-offwhite {
   background-color: var(--offwhite);
+}
+
+.bg-transparent {
+  background-color: transparent;
 }
 
 .bg-white-white {
@@ -1507,6 +1559,11 @@ video {
   padding-bottom: 19.5px;
 }
 
+.py-\[19px\] {
+  padding-top: 19px;
+  padding-bottom: 19px;
+}
+
 .pb-5 {
   padding-bottom: 1.25rem;
 }
@@ -1539,6 +1596,10 @@ video {
   text-align: center;
 }
 
+.text-end {
+  text-align: end;
+}
+
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -1547,11 +1608,6 @@ video {
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
-}
-
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
 }
 
 .text-base {
@@ -1590,8 +1646,16 @@ video {
   font-style: italic;
 }
 
+.\!leading-6 {
+  line-height: 1.5rem !important;
+}
+
 .\!leading-7 {
   line-height: 1.75rem !important;
+}
+
+.\!leading-lh21 {
+  line-height: 21.6px !important;
 }
 
 .\!leading-normal {
@@ -1634,6 +1698,10 @@ video {
   color: var(--green);
 }
 
+.text-lightgrey-lightgrey {
+  color: var(--lightgrey);
+}
+
 .text-white-white {
   color: var(--white);
 }
@@ -1644,6 +1712,14 @@ video {
 
 .decoration-1 {
   text-decoration-thickness: 1px;
+}
+
+.placeholder-lightgrey-lightgrey::-moz-placeholder {
+  color: var(--lightgrey);
+}
+
+.placeholder-lightgrey-lightgrey::placeholder {
+  color: var(--lightgrey);
 }
 
 .\!opacity-100 {
@@ -1916,6 +1992,14 @@ video {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
+.checked\:border-transparent:checked {
+  border-color: transparent;
+}
+
+.hover\:\!bg-greentwo-greentwo:hover {
+  background-color: var(--greentwo) !important;
+}
+
 .hover\:bg-blue-blue:hover {
   background-color: var(--blue);
 }
@@ -1926,6 +2010,10 @@ video {
 
 .hover\:bg-green-green:hover {
   background-color: var(--green);
+}
+
+.hover\:bg-greentwo-greentwo:hover {
+  background-color: var(--greentwo);
 }
 
 .hover\:bg-white-white:hover {
@@ -1954,6 +2042,11 @@ video {
 
 .hover\:opacity-75:hover {
   opacity: 0.75;
+}
+
+.focus\:outline-none:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
 }
 
 .group:hover .group-hover\:block {
@@ -2316,6 +2409,11 @@ video {
     line-height: 2rem;
   }
 
+  .lg\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
   .lg\:text-fourxl {
     font-size: 40px;
   }
@@ -2335,11 +2433,6 @@ video {
   .lg\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
-  }
-
-  .lg\:text-4xl {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
   }
 
   .lg\:leading-\[48px\] {
@@ -2452,6 +2545,12 @@ video {
   .\32xl\:px-0 {
     padding-left: 0px;
     padding-right: 0px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .dark\:bg-white-white {
+    background-color: var(--white);
   }
 }
 

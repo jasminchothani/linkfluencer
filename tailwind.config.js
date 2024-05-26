@@ -55,6 +55,9 @@ module.exports = {
         paleviolet: {
           paleviolet: 'var(--paleviolet)',
         },
+        greentwo: {
+          greentwo: 'var(--greentwo)',
+        }
       },
       // backgroundColor: {
       //   before: 'var(--green)',
@@ -78,6 +81,7 @@ module.exports = {
         lh67: '67.2px',
         lh48: '48px',
         lh38: '38.4px',
+        lh21: '21.6px',
       },
       boxShadow: {
        customblackblue: '0px 8px 20px 0px var(--blackblue)',
@@ -90,6 +94,7 @@ module.exports = {
         llg: '1084px',
         xxl: '1500px',
         xxll: '1920px',
+        ssm: '594px',
       }
     }
     ,
