@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Linkfluencer</title>
+  <!-- fevicon icon -->
+  <link rel="icon" type="image/x-icon" href="assets/images/responsivelogo.svg">
+
+  <!-- taiwind css -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+  <!-- output css -->
+  <link href="./assets/css/output.css" rel="stylesheet">
+
+  <!-- swiper css -->
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> -->
+</head>
+
+<body>
+  <main>
+    <div class="max-w-screen-xxll flex flex-wrap lg:flex-nowrap mx-auto" id="sign-up-brands">
+      <div
+        class="lg:max-w-screen-llg max-w-full w-full bg-blue-blue px-4 lg:px-10 xxl:p-py16px100 flex flex-col justify-between">
+        <div>
+          <a href="index.html">
+          <img src="assets/images/sign-uplogo.svg" alt="logo" width="284" height="75">
+          </a>
+        </div>
+        <div>
+          <div>
+            <h1
+              class="text-3xl lg:text-4xl xxl:text-8xl font-bold text-center text-white-white capitalize mb-4 xxl:!leading-lh96 !leading-normal">
+              Sign Up</h1>
+            <p class="text-white-white text-center font-bold text-lg xxl:text-2xl !leading-7">Lorem ipsum dolor sit amet adipiscing elit.</p>
+          </div>
+          <div class="max-w-screen-sm mx-auto mt-8">
+            <div>
+              <input type="text" name="fname"
+                class="mt-4 py-[19px] bg-cultured-cultured px-6 text-blue-blue font-bold rounded-[5px] bg-white border border-blue-blue placeholder-lightgrey-lightgrey focus:outline-none  block w-full text-lg !leading-lh21"
+                placeholder="Enter your name" />
+
+                <input type="email" name="email"
+                class="mt-4 py-[19px] bg-cultured-cultured px-6 text-blue-blue font-bold rounded-[5px] bg-white border border-blue-blue placeholder-lightgrey-lightgrey focus:outline-none  block w-full text-lg !leading-lh21"
+                placeholder="Enter your email" />
+
+              <input type="number" name="number"
+                class="mt-4 py-[19px] bg-cultured-cultured px-6 text-blue-blue font-bold rounded-[5px] bg-white border border-blue-blue placeholder-lightgrey-lightgrey focus:outline-none  block w-full text-lg !leading-lh21"
+                placeholder="Enter your mobile number" />
+
+              <div class="relative">
+                <input id="password" type="password"
+                  class="mt-4 py-[19px] bg-cultured-cultured px-6 text-blue-blue font-bold rounded-[5px] bg-white border border-blue-blue placeholder-lightgrey-lightgrey focus:outline-none  block w-full text-lg !leading-lh21"
+                  placeholder="Enter your password">
+                <button id="togglePassword" type="button"
+                  class="absolute inset-y-0 right-2 flex items-center px-4 text-lightgrey-lightgrey focus:outline-none">
+                  <svg id="eyeIconVisible" class="flex-shrink-0 text-lightgrey-lightgrey" width="25" height="25"
+                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path class="hs-password-active:hidden" d="M9.88 9.88a3 3 0 1 0 4.24 4.24"></path>
+                    <path class="hs-password-active:hidden"
+                      d="M10.73 5.08A10.43 10.43 0 0 1 12 5c7 0 10 7 10 7a13.16 13.16 0 0 1-1.67 2.68"></path>
+                    <path class="hs-password-active:hidden"
+                      d="M6.61 6.61A13.526 13.526 0 0 0 2 12s3 7 10 7a9.74 9.74 0 0 0 5.39-1.61"></path>
+                    <line class="hs-password-active:hidden" x1="2" x2="22" y1="2" y2="22"></line>
+                    <path class="hidden hs-password-active:block" d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z">
+                    </path>
+                    <circle class="hidden hs-password-active:block" cx="12" cy="12" r="3"></circle>
+                  </svg>
+                  <svg id="eyeIconHidden" class="flex-shrink-0 text-lightgrey-lightgrey hidden" width="25" height="25"
+                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                    <path
+                      d="M2.458 12C3.732 7.943 7.607 5 12 5c4.392 0 8.268 2.943 9.542 7-.005.01-.014.015-.02.025a9.576 9.576 0 01-.024.05C20.268 16.057 16.392 19 12 19c-4.392 0-8.268-2.943-9.542-7.025A9.648 9.648 0 012.458 12z">
+                    </path>
+                  </svg>
+                </button>
+              </div>
+
+              <div class="relative">
+                <input id="password" type="password"
+                  class="mt-4 py-[19px] bg-cultured-cultured px-6 text-blue-blue font-bold rounded-[5px] bg-white border border-blue-blue placeholder-lightgrey-lightgrey focus:outline-none  block w-full text-lg !leading-lh21"
+                  placeholder="Confirm your password">
+                <button id="togglePassword" type="button"
+                  class="absolute inset-y-0 right-2 flex items-center px-4 text-lightgrey-lightgrey focus:outline-none">
+                  <svg id="eyeIconVisible" class="flex-shrink-0 text-lightgrey-lightgrey" width="25" height="25"
+                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path class="hs-password-active:hidden" d="M9.88 9.88a3 3 0 1 0 4.24 4.24"></path>
+                    <path class="hs-password-active:hidden"
+                      d="M10.73 5.08A10.43 10.43 0 0 1 12 5c7 0 10 7 10 7a13.16 13.16 0 0 1-1.67 2.68"></path>
+                    <path class="hs-password-active:hidden"
+                      d="M6.61 6.61A13.526 13.526 0 0 0 2 12s3 7 10 7a9.74 9.74 0 0 0 5.39-1.61"></path>
+                    <line class="hs-password-active:hidden" x1="2" x2="22" y1="2" y2="22"></line>
+                    <path class="hidden hs-password-active:block" d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z">
+                    </path>
+                    <circle class="hidden hs-password-active:block" cx="12" cy="12" r="3"></circle>
+                  </svg>
+                  <svg id="eyeIconHidden" class="flex-shrink-0 text-lightgrey-lightgrey hidden" width="25" height="25"
+                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                    <path
+                      d="M2.458 12C3.732 7.943 7.607 5 12 5c4.392 0 8.268 2.943 9.542 7-.005.01-.014.015-.02.025a9.576 9.576 0 01-.024.05C20.268 16.057 16.392 19 12 19c-4.392 0-8.268-2.943-9.542-7.025A9.648 9.648 0 012.458 12z">
+                    </path>
+                  </svg>
+                </button>
+              </div>
+
+              <input type="text" name="bname"
+                class="mt-4 py-[19px] bg-cultured-cultured px-6 text-blue-blue font-bold rounded-[5px] bg-white border border-blue-blue placeholder-lightgrey-lightgrey focus:outline-none  block w-full text-lg !leading-lh21"
+                placeholder="Enter your business name" />
+
+              <input type="text" name="bwebsite"
+              class="mt-4 py-[19px] bg-cultured-cultured px-6 text-blue-blue font-bold rounded-[5px] bg-white border border-blue-blue placeholder-lightgrey-lightgrey focus:outline-none  block w-full text-lg !leading-lh21"
+              placeholder="Enter your business website" />
+              
+              <input type="text" name="type"
+              class="mt-4 py-[19px] bg-cultured-cultured px-6 text-blue-blue font-bold rounded-[5px] bg-white border border-blue-blue placeholder-lightgrey-lightgrey focus:outline-none  block w-full text-lg !leading-lh21"
+              placeholder="Industry Type" />                            
+              
+              <input type="text" name="city"
+              class="mt-4 py-[19px] bg-cultured-cultured px-6 text-blue-blue font-bold rounded-[5px] bg-white border border-blue-blue placeholder-lightgrey-lightgrey focus:outline-none  block w-full text-lg !leading-lh21"
+              placeholder="Enter city" /> 
+              
+              <input type="text" name="country"
+              class="mt-4 py-[19px] bg-cultured-cultured px-6 text-blue-blue font-bold rounded-[5px] bg-white border border-blue-blue placeholder-lightgrey-lightgrey focus:outline-none  block w-full text-lg !leading-lh21"
+              placeholder="Enter country" /> 
+            </div>
+
+            <div class="text-center">
+              <button
+                class="btn-green mt-4 text-white-white font-bold text-base py-4 px-10 lg:text-2xl !leading-7 rounded-md capitalize">Create Account</button>
+            </div>
+
+            <hr class="h-[2px] my-8 bg-white-white border-0 dark:bg-white-white">
+
+            <div class="flex justify-between gap-4">
+              <button
+                class="w-full bg-transparent border border-white-white text-center transition-all duration-300 px-3 py-[15px] lg:px-6 rounded-md hover:bg-greentwo-greentwo">
+                <img src="assets/images/Google-login.svg" alt="google icon" class="mx-auto inline-block" width="30" height="30">
+              </button>
+              <button
+                class="w-full bg-transparent border border-white-white text-center transition-all duration-300 px-3 py-[15px] lg:px-6 rounded-md hover:bg-greentwo-greentwo">
+                <img src="assets/images/Facebook-login.svg" alt="google icon" class="mx-auto inline-block" width="30" height="30">
+              </button>
+            </div>
+            <div>
+              <p class="text-white-white mt-4 font-normal text-center text-lg !leading-5">Already have an account? <a href="sign-up.html#sign-up" class="text-green-green underline font-bold hover:text-white-white capitalize">Log In</a>
+              </p>
+                      
+            </div>
+
+
+          </div>
+        </div>
+        <div>
+          <p class="text-white-white font-semibold my-4 text-lg lg:text-2xl !leading-7">© 2024 Linkfluencer</p>
+        </div>
+      </div>
+      <div class="lg:max-w-screen-mmd max-w-full w-full bg-white-white flex items-center">
+        <img src="assets/images/sign-upbrandsimg.svg" alt="sign up img" width="836" height="1402" class="w-full">
+      </div>
+    </div>
+  </main>
+
+  <!-- custome js -->
+  <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>

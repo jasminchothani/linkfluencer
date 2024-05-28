@@ -1570,6 +1570,21 @@ video {
   padding-right: 1.25rem;
 }
 
+.py-\[15\.5px\] {
+  padding-top: 15.5px;
+  padding-bottom: 15.5px;
+}
+
+.py-\[\] {
+  padding-top: ;
+  padding-bottom: ;
+}
+
+.py-\[15px\] {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
 .pb-5 {
   padding-bottom: 1.25rem;
 }
