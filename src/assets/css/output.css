@@ -159,6 +159,7 @@ body{
   font-family: 'Avenir LT Std', sans-serif;
   background-color: var(--offwhite);
   color: var(--blue);
+  scroll-behavior: smooth;
 }
 
 ul li{
@@ -245,6 +246,20 @@ ul li{
 .swiper-button-next{
     left: 50px !important;
 } */
+
+/* Chrome, Safari, Edge, Opera */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
 
 /* .group:hover .group-hover\:visible {
     visibility: visible;
@@ -1555,6 +1570,11 @@ video {
   padding-bottom: 2rem;
 }
 
+.py-\[15px\] {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
 .py-\[19\.5px\] {
   padding-top: 19.5px;
   padding-bottom: 19.5px;
@@ -1563,26 +1583,6 @@ video {
 .py-\[19px\] {
   padding-top: 19px;
   padding-bottom: 19px;
-}
-
-.px-5 {
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
-}
-
-.py-\[15\.5px\] {
-  padding-top: 15.5px;
-  padding-bottom: 15.5px;
-}
-
-.py-\[\] {
-  padding-top: ;
-  padding-bottom: ;
-}
-
-.py-\[15px\] {
-  padding-top: 15px;
-  padding-bottom: 15px;
 }
 
 .pb-5 {
@@ -1629,6 +1629,11 @@ video {
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
 
 .text-base {
@@ -2415,16 +2420,6 @@ video {
   .lg\:py-4 {
     padding-top: 1rem;
     padding-bottom: 1rem;
-  }
-
-  .lg\:py-5 {
-    padding-top: 1.25rem;
-    padding-bottom: 1.25rem;
-  }
-
-  .lg\:py-8 {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
   }
 
   .lg\:pb-20 {

@@ -55,7 +55,7 @@ if (document.querySelector('.testimonial-slider')) {
 //   eyeIconHidden.classList.toggle('hidden');
 // });
 
-
+// password hide and show
 document.addEventListener('DOMContentLoaded', () => {
   const passwordInput = document.getElementById('password');
   const togglePasswordButton = document.getElementById('togglePassword');
