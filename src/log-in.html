@@ -20,7 +20,7 @@
 
 <body>
   <main>
-    <div class="max-w-screen-xxll flex flex-wrap lg:flex-nowrap mx-auto" id="log-in">
+    <div class="max-w-screen-xxll flex flex-wrap lg:flex-nowrap mx-auto min-h-full lg:min-h-[100vh]" id="log-in">
       <div
         class="lg:max-w-screen-llg max-w-full w-full bg-blue-blue px-4 lg:px-10 xxl:p-py16px100 flex flex-col justify-between">
         <div>
@@ -73,13 +73,32 @@
               </div>
 
               <div class="flex items-center justify-between mt-6 flex-wrap gap-x-1">
-                <div class="flex items-center gap-1">
+                <!-- <div class="flex items-center gap-1">
                   <input type="checkbox"
                     class="border-white rounded-[2px] h-6 w-6 bg-transparent checked:bg-white checked:border-transparent focus:outline-none">
                   <span
                     class="text-white-white text-center font-bold text-lg xxl:text-2xl !leading-7 capitalize">Remember
                     Me?</span>
-                </div>
+                </div> -->
+                <div class="inline-flex items-center">
+                  <label class="relative flex items-center rounded-sm cursor-pointer mr-2" htmlFor="check">
+                    <input type="checkbox"
+                      class="before:content[''] peer relative h-6 w-6 cursor-pointer appearance-none rounded-sm border border-blue-white-white transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-blue before:opacity-0 before:transition-opacity checked:border-green-green checked:bg-green-green checked:before:bg-green-green"
+                      id="check" />
+                    <span
+                      class="absolute text-white transition-opacity opacity-0 pointer-events-none top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 peer-checked:opacity-100">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor"
+                        stroke="currentColor" stroke-width="1">
+                        <path fill-rule="evenodd"
+                          d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                          clip-rule="evenodd"></path>
+                      </svg>
+                    </span>
+                  </label>
+                  <label class="text-white-white text-center font-bold text-lg xxl:text-2xl !leading-[21px] pt-1 capitalize cursor-pointer select-none" htmlFor="check">
+                    Remember Me
+                  </label>
+                </div> 
                 <a href="reset-password.html#reset-password"
                   class="text-white-white text-end font-bold text-lg xxl:text-2xl !leading-7 capitalize underline hover:text-green-green">Forgot
                   Password?</a>

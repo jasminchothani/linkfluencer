@@ -57,6 +57,9 @@ module.exports = {
         },
         greentwo: {
           greentwo: 'var(--greentwo)',
+        },
+        mediumspringgreen: {
+          mediumspringgreen: 'var(--mediumspringgreen)',
         }
       },
       // backgroundColor: {

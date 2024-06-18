@@ -19,6 +19,26 @@ if (document.querySelector('.simplify-harness-section')) {
   });
 }
 
+// our parners page footer
+if (document.querySelector('.our-partners')) {
+  // Create a new Swiper instance
+  var swiper = new Swiper(".our-partners", {
+    spaceBetween: 30,
+    centeredSlides: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    // navigation: {
+    //   nextEl: ".swiper-button-next",
+    //   prevEl: ".swiper-button-prev",
+    // },
+  });
+}
 
 // Check if any element with the class 'testimonial-slider' exists
 if (document.querySelector('.testimonial-slider')) {
@@ -37,23 +57,6 @@ if (document.querySelector('.testimonial-slider')) {
   });
 }
 
-
-
-
-// workig fine
-// const passwordInput = document.getElementById('password');
-// const togglePasswordButton = document.getElementById('togglePassword');
-// const eyeIconVisible = document.getElementById('eyeIconVisible');
-// const eyeIconHidden = document.getElementById('eyeIconHidden');
-
-// togglePasswordButton.addEventListener('click', () => {
-//   const isPassword = passwordInput.type === 'password';
-//   passwordInput.type = isPassword ? 'text' : 'password';
-
-//   // Toggle the visibility of eye icons
-//   eyeIconVisible.classList.toggle('hidden');
-//   eyeIconHidden.classList.toggle('hidden');
-// });
 
 // password hide and show
 document.addEventListener('DOMContentLoaded', () => {
@@ -76,62 +79,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-// document.addEventListener('DOMContentLoaded', function () {
-//   const accordionButtons = document.querySelectorAll('.accordion-button');
-
-//   accordionButtons.forEach(button => {
-//     button.addEventListener('click', function () {
-//       const target = document.querySelector(this.getAttribute('data-target'));
-//       const icon = this.parentElement.querySelector('.icon');
-
-//       // Close all other accordion items and set their icons to '+'
-//       document.querySelectorAll('.accordion-collapse').forEach(collapse => {
-//         if (collapse !== target) {
-//           collapse.classList.remove('show');
-//           collapse.previousElementSibling.querySelector('.icon').textContent = '+';
-//         }
-//       });
-
-//       // Toggle the clicked item and set the icon accordingly
-//       target.classList.toggle('show');
-//       icon.textContent = target.classList.contains('show') ? '-' : '+';
-//     });
-//   });
-// });
-
-
-// document.querySelectorAll('.faq-toggle').forEach(button => {
-//   button.addEventListener('click', () => {
-//     const faqContent = button.nextElementSibling;
-
-//     // Close all FAQ items
-//     document.querySelectorAll('.faq-content').forEach(content => {
-//       if (!content.classList.contains('hidden')) {
-//         content.classList.add('hidden');
-//         content.previousElementSibling.classList.remove('bg-green-green', 'text-white');
-//         content.previousElementSibling.classList.add('text-blue-blue', 'border-blue-blue');
-//         content.previousElementSibling.querySelector('.icon').textContent = '+';
-//         content.previousElementSibling.querySelector('.icon').classList.add('text-blue-blue');
-//       }
-//     });
-
-//     // Open the clicked FAQ item
-//     if (faqContent.classList.contains('hidden')) {
-//       faqContent.classList.remove('hidden');
-//       button.classList.add('bg-green-green', 'text-white');
-//       button.classList.remove('text-blue-blue', 'border-blue-blue');
-//       button.querySelector('.icon').textContent = '-';
-//       button.querySelector('.icon').classList.remove('text-blue-blue');
-//     } else {
-//       faqContent.classList.add('hidden');
-//       button.classList.remove('bg-green-green', 'text-white');
-//       button.classList.add('text-blue-blue', 'border-blue-blue');
-//       button.querySelector('.icon').textContent = '+';
-//       button.querySelector('.icon').classList.add('text-blue-blue');
-//     }
-//   });
-// });
-
+// faq
 document.querySelectorAll('.faq-toggle').forEach(button => {
   button.addEventListener('click', () => {
     const faqContent = button.nextElementSibling;
@@ -155,4 +103,33 @@ document.querySelectorAll('.faq-toggle').forEach(button => {
       button.querySelector('.icon').classList.remove('text-blue-blue');
     }
   });
+});
+
+
+// tab privacy policy
+document.addEventListener('DOMContentLoaded', function () {
+  const tabs = document.querySelectorAll('[data-tabs-target]');
+  const tabContents = document.querySelectorAll('[role="tabpanel"]');
+
+  if (tabs.length > 0 && tabContents.length > 0) {
+      tabs.forEach(tab => {
+          tab.addEventListener('click', function () {
+              tabs.forEach(t => {
+                  t.classList.remove('bg-mediumspringgreen-mediumspringgreen', 'font-bold', 'text-2xl', 'leading-7', 'py-4', 'px-8', 'rounded-lg', 'rounded-t-lg');
+                  t.classList.add('font-semibold', 'text-xl', 'leading-6', 'p-4', 'rounded-lg');
+              });
+              tabContents.forEach(tc => tc.classList.add('hidden'));
+
+              this.classList.remove('font-semibold', 'text-xl', 'leading-6', 'p-4', 'rounded-lg');
+              this.classList.add('bg-mediumspringgreen-mediumspringgreen', 'font-bold', 'text-2xl', 'leading-7', 'py-4', 'px-8', 'rounded-lg', 'rounded-t-lg');
+              const target = document.querySelector(this.dataset.tabsTarget);
+              target.classList.remove('hidden');
+          });
+      });
+
+      // Activate the first tab by default
+      tabs[0].classList.remove('font-semibold', 'text-xl', 'leading-6', 'p-4', 'rounded-lg');
+      tabs[0].classList.add('bg-mediumspringgreen-mediumspringgreen', 'font-bold', 'text-2xl', 'leading-7', 'py-4', 'px-8', 'rounded-lg', 'rounded-t-lg');
+      tabContents[0].classList.remove('hidden');
+  } 
 });

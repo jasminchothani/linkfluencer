@@ -80,7 +80,13 @@ ul li{
     background: var(--blue) !important;
 }
 
-
+/* our partners page */
+.our-partners .swiper-pagination-bullet{
+    background: var(--green) !important;
+}
+.our-partners .swiper-pagination-bullet.swiper-pagination-bullet-active{
+    background: var(--blue) !important;
+}
 /* testinomial section */
 /* .swiper-button-next, .swiper-button-prev{
     position: relative !important;
