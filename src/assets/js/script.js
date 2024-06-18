@@ -59,24 +59,47 @@ if (document.querySelector('.testimonial-slider')) {
 
 
 // password hide and show
-document.addEventListener('DOMContentLoaded', () => {
-  const passwordInput = document.getElementById('password');
-  const togglePasswordButton = document.getElementById('togglePassword');
-  const eyeIconVisible = document.getElementById('eyeIconVisible');
-  const eyeIconHidden = document.getElementById('eyeIconHidden');
+document.addEventListener('DOMContentLoaded', (event) => {
+  const toggleNewPasswordButton = document.getElementById('toggleNewPassword');
+  const toggleConfirmPasswordButton = document.getElementById('toggleConfirmPassword');
 
-  // Check if togglePasswordButton is not null before adding the event listener
-  if (togglePasswordButton) {
-    togglePasswordButton.addEventListener('click', () => {
-      const isPassword = passwordInput.type === 'password';
-      passwordInput.type = isPassword ? 'text' : 'password';
+  if (toggleNewPasswordButton) {
+    toggleNewPasswordButton.addEventListener('click', function () {
+      const newPassword = document.getElementById('newPassword');
+      const eyeIconVisible = document.getElementById('eyeIconNewPasswordVisible');
+      const eyeIconHidden = document.getElementById('eyeIconNewPasswordHidden');
+      
+      if (newPassword.type === 'password') {
+        newPassword.type = 'text';
+        eyeIconVisible.classList.add('hidden');
+        eyeIconHidden.classList.remove('hidden');
+      } else {
+        newPassword.type = 'password';
+        eyeIconVisible.classList.remove('hidden');
+        eyeIconHidden.classList.add('hidden');
+      }
+    });
+  }
 
-      // Toggle the visibility of eye icons
-      eyeIconVisible.classList.toggle('hidden');
-      eyeIconHidden.classList.toggle('hidden');
+  if (toggleConfirmPasswordButton) {
+    toggleConfirmPasswordButton.addEventListener('click', function () {
+      const confirmPassword = document.getElementById('confirmPassword');
+      const eyeIconVisible = document.getElementById('eyeIconConfirmPasswordVisible');
+      const eyeIconHidden = document.getElementById('eyeIconConfirmPasswordHidden');
+      
+      if (confirmPassword.type === 'password') {
+        confirmPassword.type = 'text';
+        eyeIconVisible.classList.add('hidden');
+        eyeIconHidden.classList.remove('hidden');
+      } else {
+        confirmPassword.type = 'password';
+        eyeIconVisible.classList.remove('hidden');
+        eyeIconHidden.classList.add('hidden');
+      }
     });
   }
 });
+
 
 
 // faq
@@ -132,4 +155,19 @@ document.addEventListener('DOMContentLoaded', function () {
       tabs[0].classList.add('bg-mediumspringgreen-mediumspringgreen', 'font-bold', 'text-2xl', 'leading-7', 'py-4', 'px-8', 'rounded-lg', 'rounded-t-lg');
       tabContents[0].classList.remove('hidden');
   } 
+});
+
+
+// on scroll need to decrease height
+window.addEventListener('scroll', function() {
+  var header = document.getElementById('mainHeader');
+  if (window.scrollY > 0) {
+      // Add class for smaller padding when scrolled
+      header.classList.add('py-3');
+      header.classList.remove('py-4');
+  } else {
+      // Add class for default padding when at the top
+      header.classList.add('py-4');
+      header.classList.remove('py-3');
+  }
 });
