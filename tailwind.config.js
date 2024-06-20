@@ -60,6 +60,15 @@ module.exports = {
         },
         mediumspringgreen: {
           mediumspringgreen: 'var(--mediumspringgreen)',
+        },
+        valentinered: {
+          valentinered: 'var(--valentinered)',
+        },
+        darkgreen: {
+          darkgreen: 'var(--darkgreen)',
+        },
+        palegray: {
+          palegray: 'var(--palegray)',
         }
       },
       // backgroundColor: {
@@ -88,6 +97,8 @@ module.exports = {
       },
       boxShadow: {
        customblackblue: '0px 8px 20px 0px var(--blackblue)',
+       customblackdark: '0px 20px 24px -4px var(--blackdark)',
+       customblue: '4px 0px 0px -1px var(--blue) inset',
       },
       gap:{
         columngap136: '136px',
@@ -98,9 +109,12 @@ module.exports = {
         xxl: '1500px',
         xxll: '1920px',
         ssm: '594px',
+      },
+      borderRadius: {
+        rouundedllg: '10px',
       }
     }
     ,
   },
-  plugins: [],
+  plugins: [require('tailwind-scrollbar')],
 }

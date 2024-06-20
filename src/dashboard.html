@@ -19,9 +19,195 @@
 </head>
 
 <body>
-    <main>
-       <h1 class="text-4xl font-bold text-center">WELCOME TO DASHBORD</h1>
-    </main>
+    <header class="bg-blue-blue sticky z-50 py-4 px-4 2xl:px-10 top-0 transition-all duration-300 ease-in-out border-b-2 border-green-green" id="mainHeader">
+        <nav class="max-w-full mx-auto flex justify-between items-center nav-custome flex-wrap">
+            <div class="w-auto">
+                <a href="index.html">
+                    <img src="./assets/images/logo.svg" alt="logo" width="192" height="50" class="hidden md:inline-block">
+                    <img src="./assets/images/responsivelogo.svg" alt="logo.." width="50" height="50"class="inline-block md:hidden">
+                </a>
+            </div>
+          
+            <div class="w-auto flex justify-center sm:justify-start items-center gap-2 md:gap-10">
+                <div class="flex gap-6 items-center">
+                    <div class="relative">
+                        <div class="w-8 h-8 flex items-center justify-center relative after:'' after:absolute after:top-2 after:right-1 after:w-2 after:h-2 after:bg-valentinered-valentinered after:rounded-full after:inline-block">
+                            <img src="assets/images/notificationicon.svg" alt="notification iocn" width="19" height="25">
+                        </div>
+                    </div>                      
+                    <div>
+                        <img src="assets/images/Profile.svg" alt="profile image" width="50" height="50">
+                    </div>
+                 </div>
+                <div>
+                    <select name="language" id="language"
+                        class="bg-blue-blue text-white-white outline-none text-base md:text-xl leading-6 font-semibold pr-[10px]">
+                        <option value="english">EN</option>
+                        <option value="english">EN</option>
+                    </select>
+                </div>
+                <div class="inline-block xl:hidden">
+                    <button id="toggleSidebar" class="p-2 rounded bg-transparent-transparent">
+                        <img src="assets/images/sidebar-icon.svg" alt="toggle icon" width="24" height="24">
+                    </button>                    
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="flex bg-white-white min-h-[calc(100vh-84px)]">    
+        <!-- Sidebar -->
+        <aside id="sidebar" class="w-[280px] z-[1] min-h-full bg-white-white shadow-customblackdark pt-10 transform -translate-x-full xl:translate-x-0 absolute xl:relative xl:transform-none transition-transform duration-300">
+            <nav>
+                <ul class="h-[calc(100vh-320px)] overflow-auto scrollbar-thin scrollbar-thumb-blue-blue scrollbar-track-green-green">
+                    <li class="mb-6">
+                        <a href="javascript:void(0)" class="py-4 pr-5 pl-10 capitalize !leading-6 text-xl text-blue-blue flex items-center shadow-customblue bg-darkgreen-darkgreen font-bold hover:shadow-customblue hover:bg-darkgreen-darkgreen active:shadow-customblue active:bg-darkgreen-darkgreen active:font-bold">
+                            <img src="assets/images/HouseLine.svg" alt="house img" width="25" height="24" class="inline-block me-4">                       
+                            <span class="-mb-1">Dashboard </span>
+                        </a>
+                    </li>
+                    <li class="mb-6">
+                        <a href="javascript:void(0)" class="py-4 pr-5 pl-10 capitalize !leading-6 font-normal text-xl text-blue-blue flex items-center hover:shadow-customblue hover:bg-darkgreen-darkgreen active:shadow-customblue active:bg-darkgreen-darkgreen active:font-bold">
+                            <img src="assets/images/mylinksiconsidebar.svg" alt="house img" width="25" height="24" class="inline-block me-4">                       
+                            <span class="-mb-1">My Links </span>
+                        </a>
+                    </li>
+                    <li class="mb-6">
+                        <a href="javascript:void(0)" class="py-4 pr-5 pl-10 capitalize !leading-6 font-normal text-xl text-blue-blue flex items-center hover:shadow-customblue hover:bg-darkgreen-darkgreen active:shadow-customblue active:bg-darkgreen-darkgreen active:font-bold">
+                            <img src="assets/images/bulkuploadsidebar.svg" alt="house img" width="25" height="24" class="inline-block me-4">                       
+                            <span class="-mb-1">Bulk Upload </span>
+                        </a>
+                    </li>
+                    <li class="mb-6">
+                        <a href="javascript:void(0)" class="py-4 pr-5 pl-10 capitalize !leading-6 font-normal text-xl text-blue-blue flex items-center hover:shadow-customblue hover:bg-darkgreen-darkgreen active:shadow-customblue active:bg-darkgreen-darkgreen active:font-bold">
+                            <img src="assets/images/analyticssidebaricon.svg" alt="house img" width="25" height="24" class="inline-block me-4">                       
+                            <span class="-mb-1">Analytics </span>
+                        </a>
+                    </li>
+                    <li class="mb-6">
+                        <a href="javascript:void(0)" class="py-4 pr-5 pl-10 capitalize !leading-6 font-normal text-xl text-blue-blue flex items-center hover:shadow-customblue hover:bg-darkgreen-darkgreen active:shadow-customblue active:bg-darkgreen-darkgreen active:font-bold">
+                            <img src="assets/images/icon-campaign.svg" alt="Campaign img" width="25" height="24" class="inline-block me-4">                       
+                            <span class="-mb-1">Campaign </span>
+                            <img src="assets/images/coming-soon-unscreen.gif" alt="comming soon img" width="40" height="40" class="inline-block ms-auto">                       
+                        </a>
+                    </li>                   
+                </ul>
+                <ul class="border-t-4 border-green-green pt-6">         
+                    <li class="relative mb-6">
+                        <a href="javascript:void(0);" class="py-4 pr-5 pl-10 capitalize !leading-6 font-normal text-xl text-blue-blue flex items-center hover:shadow-customblue hover:bg-darkgreen-darkgreen active:shadow-customblue active:bg-darkgreen-darkgreen active:font-bold" id="dropdownMenu2">
+                            <img src="assets/images/profilesidebar.svg" alt="profile img"  width="25" height="24" class="inline-block me-4">
+                            <span>Profile </span>
+                            <img src="assets/images/Caretleft.svg" alt="caret img" width="16" height="16" class="inline-block ms-auto transition-transform transform rotate-0" id="caretIcon">
+                        </a>
+                        <ul class="hidden" id="dropdownContent">
+                            <li>
+                                <a href="javascript:void(0);" class="py-4 pr-5 pl-16 capitalize !leading-6 font-normal text-xl text-blue-blue flex items-center hover:shadow-customblue hover:bg-darkgreen-darkgreen active:shadow-customblue active:bg-darkgreen-darkgreen active:font-bold">
+                                    <img src="assets/images/sidebarwallet.svg" alt="wallet img"  width="25" height="24" class="inline-block me-4">
+                                    <span>My Wallet </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" class="py-4 pr-5 pl-16 capitalize !leading-6 font-normal text-xl text-blue-blue flex items-center hover:shadow-customblue hover:bg-darkgreen-darkgreen active:shadow-customblue active:bg-darkgreen-darkgreen active:font-bold">
+                                    <img src="assets/images/profilesidebar.svg" alt="profile img"  width="25" height="24" class="inline-block me-4">
+                                    <span>Edit Profile </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                    <li class="mb-6">
+                        <a href="javascript:void(0)" class="py-4 pr-5 pl-10 capitalize !leading-6 font-normal text-xl text-blue-blue flex items-center hover:shadow-customblue hover:bg-darkgreen-darkgreen active:shadow-customblue active:bg-darkgreen-darkgreen active:font-bold">
+                            <img src="assets/images/settingicon.svg" alt="setting img" width="25" height="24" class="inline-block me-4">                       
+                            <span class="-mb-1">Settings </span>
+                        </a>
+                    </li>
+
+                    <li class="mb-6">
+                        <a href="javascript:void(0)" class="py-4 pr-5 pl-10 capitalize !leading-6 font-normal text-xl text-valentinered-valentinered flex items-center hover:shadow-customblue hover:bg-darkgreen-darkgreen active:shadow-customblue active:bg-darkgreen-darkgreen active:font-bold">
+                            <img src="assets/images/logouticon.svg" alt="logout img" width="25" height="24" class="inline-block me-4">                       
+                            <span class="-mb-1">Log Out </span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+    
+        <!-- Main Content Area -->
+        <main id="mainContent" class="mx-4 pt-4 xl:mx-10 w-full xl:w-[calc(100%-360px)] transition-transform duration-300">
+            <!-- top header -->
+            <section>
+                <div class="fle">  
+                    <div class="flex items-cente gap-4 mb-4">
+                        <div class="relative group size-[60px]">
+                            <svg class="size-full" width="36" height="36" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Background Circle -->
+                            <circle cx="18" cy="18" r="16" fill="none" class="stroke-current text-palegray-palegray dark:text-palegray-palegray" stroke-width="3"></circle>
+                            <!-- Progress Circle inside a group with rotation -->
+                            <g class="origin-center -rotate-90 transform">
+                                <circle cx="18" cy="18" r="16" fill="none" class="stroke-current text-green-green dark:text-green-green" stroke-width="3" stroke-dasharray="100" stroke-dashoffset="50"></circle>
+                            </g>
+                            </svg>
+                            <!-- Percentage Text -->
+                            <div class="absolute top-1/2 start-1/2 transform -translate-y-1/2 -translate-x-1/2 w-[44px] h-[44px]">
+                                <img src="assets/images/Profilepicsubheaderr.svg" alt="user icon" width="44" height="44">
+                                <div class="absolute top-12 left-1 bg-blue-blue text-green-green text-lg !leading-5 font-bold rounded-bl-lg rounded-br-lg rounded-tr-lg p-2 opacity-0 transition-opacity duration-300 group-hover:opacity-100 before:content: '' before:absolute before:border-8 before:-top-4 before:left-0 before:border-b-blue-blue before:border-l-transparent before:border-r-transparent before:border-t-transparent">
+                                    50%
+                                </div>   
+                            </div>
+                        </div>   
+                        <div>
+                            <div class="font-normal text-xl !leading-6 text-lightgrey-lightgrey mb-2 capitalize">Welcome</div>
+                            <div class="text-2xl !leading-7 font-bold text-blue-blue capitalize">👋 hey, simon.</div>
+                        </div>
+                    </div>
+                    <div class="font-normal text-xl !leading-6 text-lightgrey-lightgrey mb-2 capitalize">Welcome</div>
+                </div>
+            </section>
+
+            <!-- mian sub content -->
+            <section class="mt-10">
+                <div>
+                    <div class="w-full py-4 px-6 bg-green-green rounded-rouundedllg border border-green-green mb-6">
+                        <div class="text-blue-blue font-bold text-2xl !leading-7">Create your Links</div>
+                    </div>
+                    <div class="w-full py-8 lg:py-[61px] px-6 rounded-rouundedllg border border-palegray-palegray flex flex-wrap gap-8 lg:gap-[60px] justify-center items-center">
+                        <img src="assets/images/dashbaordcretesmarlink.svg" alt="link img" width="150" height="150" class="inline-block">
+                        <button class="bg-blue-blue transition-all duration-300 px-4 lg:px-10 py-4 text-white-white font-bold text-lg lg:text-2xl !leading-7 rounded-md hover:bg-bluehover-bluehover border">
+                            <img src="assets/images/plusiconwhite.svg" alt="plus img" width="25" height="25" class="inline-block me-4">Create Smart Link</button>
+                    </div>
+                    <div class="flex gap-4 lg:gap-10 mt-6 justify-center items-center flex-wrap">
+                        <a href="javascript:void(0)" class="hover-trigger">
+                            <img src="assets/images/dashboardinsta.svg" alt="instagram icon" width="40" height="40" class="opacity-100 hover:opacity-80 transition-opacity duration-300">
+                        </a>
+                        <a href="javascript:void(0)" class="hover-trigger">
+                            <img src="assets/images/dashboardfacebook.svg" alt="facebook icon" width="40" height="40" class="opacity-100 hover:opacity-80 transition-opacity duration-300">
+                        </a>
+                        <a href="javascript:void(0)" class="hover-trigger">
+                            <img src="assets/images/dashboardsnap.svg" alt="snap icon" width="40" height="40" class="opacity-100 hover:opacity-80 transition-opacity duration-300">
+                        </a>
+                        <a href="javascript:void(0)" class="hover-trigger">
+                            <img src="assets/images/dashboardx.svg" alt="twitter icon" width="40" height="40" class="opacity-100 hover:opacity-80 transition-opacity duration-300">
+                        </a>
+                        <a href="javascript:void(0)" class="hover-trigger">
+                            <img src="assets/images/dashboardtiktok.svg" alt="ticktock icon" width="40" height="40" class="opacity-100 hover:opacity-80 transition-opacity duration-300">
+                        </a>
+                        <a href="javascript:void(0)" class="hover-trigger">
+                            <img src="assets/images/dashaboardyoutube.svg" alt="youtube icon" width="40" height="40" class="opacity-100 hover:opacity-80 transition-opacity duration-300">
+                        </a>
+                        <a href="javascript:void(0)" class="hover-trigger">
+                            <img src="assets/images/dashboardlinkdin.svg" alt="linkedin icon" width="40" height="40" class="opacity-100 hover:opacity-80 transition-opacity duration-300">
+                        </a>
+                        <a href="javascript:void(0)" class="hover-trigger">
+                           <p class="text-base !leading-5 text-blue-blue font-bold">+ 140 more</p>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>

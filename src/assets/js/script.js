@@ -158,7 +158,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
-// on scroll need to decrease height
+// on scroll need to decrease height header
 window.addEventListener('scroll', function() {
   var header = document.getElementById('mainHeader');
   if (window.scrollY > 0) {
@@ -171,3 +171,45 @@ window.addEventListener('scroll', function() {
       header.classList.remove('py-3');
   }
 });
+
+
+// dashboard sidebar toggle
+document.addEventListener('DOMContentLoaded', function () {
+  const toggleSidebarBtn = document.getElementById('toggleSidebar');
+  const sidebar = document.getElementById('sidebar');
+
+  toggleSidebarBtn.addEventListener('click', function () {
+      sidebar.classList.toggle('-translate-x-full');
+  });
+
+  // Close sidebar when clicking outside of it
+  document.addEventListener('click', function (event) {
+      const isClickInside = toggleSidebarBtn.contains(event.target) || sidebar.contains(event.target);
+      if (!isClickInside && !toggleSidebarBtn.contains(event.target)) {
+          sidebar.classList.add('-translate-x-full');
+      }
+  });
+});
+
+
+// drop down dashboard
+document.addEventListener("DOMContentLoaded", function() {
+  var dropdownMenu = document.getElementById("dropdownMenu2");
+  var dropdownContent = document.getElementById("dropdownContent");
+  var caretIcon = document.getElementById("caretIcon"); // Assuming this is the ID of your caret icon image element
+
+  dropdownMenu.addEventListener("click", function(event) {
+    event.stopPropagation();
+    dropdownContent.classList.toggle("hidden");
+    caretIcon.classList.toggle("rotate-90"); // Toggle rotation of caret icon
+  });
+
+  // Close dropdown when clicking outside
+  document.addEventListener("click", function(event) {
+    if (!dropdownMenu.contains(event.target)) {
+      dropdownContent.classList.add("hidden");
+      caretIcon.classList.remove("rotate-90"); // Ensure caret icon rotation is reset
+    }
+  });
+});
+

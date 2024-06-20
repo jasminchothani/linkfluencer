@@ -8,6 +8,9 @@
     --cultured: #F4F4F4;
     --ufogreen: #FFA07A;
     --paleviolet: #C5A9FF;
+    --valentinered: #E84646;
+    --darkgreen: #020D3A0D;
+    --palegray: #B3B3B266;
 
     /* hover effects */
     --greentwo: #20E086CC;
@@ -17,6 +20,7 @@
     /* box shadow */
     --blackblue: #00000026;
     --bluehover: #020D3ACC;
+    --blackdark: #00000014;
     /* --blackblue: 0, 0, 0, 0.15; */
 
     /* shadow color */
