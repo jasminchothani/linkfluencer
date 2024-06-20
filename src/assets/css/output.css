@@ -1634,6 +1634,10 @@ video {
   white-space: nowrap;
 }
 
+.text-clip {
+  text-overflow: clip;
+}
+
 .rounded {
   border-radius: 0.25rem;
 }
@@ -2086,6 +2090,10 @@ video {
 
 .leading-normal {
   line-height: 1.5;
+}
+
+.\!leading-4 {
+  line-height: 1rem !important;
 }
 
 .text-blue-blue {
@@ -2896,10 +2904,6 @@ video {
 
   .md\:w-\[150px\] {
     width: 150px;
-  }
-
-  .md\:w-auto {
-    width: auto;
   }
 
   .md\:max-w-\[395px\] {
