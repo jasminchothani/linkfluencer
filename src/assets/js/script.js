@@ -178,18 +178,21 @@ document.addEventListener('DOMContentLoaded', function () {
   const toggleSidebarBtn = document.getElementById('toggleSidebar');
   const sidebar = document.getElementById('sidebar');
 
-  toggleSidebarBtn.addEventListener('click', function () {
+  if (toggleSidebarBtn && sidebar) {
+    toggleSidebarBtn.addEventListener('click', function () {
       sidebar.classList.toggle('-translate-x-full');
-  });
+    });
 
-  // Close sidebar when clicking outside of it
-  document.addEventListener('click', function (event) {
+    // Close sidebar when clicking outside of it
+    document.addEventListener('click', function (event) {
       const isClickInside = toggleSidebarBtn.contains(event.target) || sidebar.contains(event.target);
-      if (!isClickInside && !toggleSidebarBtn.contains(event.target)) {
-          sidebar.classList.add('-translate-x-full');
+      if (!isClickInside) {
+        sidebar.classList.add('-translate-x-full');
       }
-  });
+    });
+  } 
 });
+
 
 
 // drop down dashboard
@@ -198,18 +201,20 @@ document.addEventListener("DOMContentLoaded", function() {
   var dropdownContent = document.getElementById("dropdownContent");
   var caretIcon = document.getElementById("caretIcon"); // Assuming this is the ID of your caret icon image element
 
-  dropdownMenu.addEventListener("click", function(event) {
-    event.stopPropagation();
-    dropdownContent.classList.toggle("hidden");
-    caretIcon.classList.toggle("rotate-90"); // Toggle rotation of caret icon
-  });
+  if (dropdownMenu && dropdownContent && caretIcon) {
+    dropdownMenu.addEventListener("click", function(event) {
+      event.stopPropagation();
+      dropdownContent.classList.toggle("hidden");
+      caretIcon.classList.toggle("rotate-90"); // Toggle rotation of caret icon
+    });
 
-  // Close dropdown when clicking outside
-  document.addEventListener("click", function(event) {
-    if (!dropdownMenu.contains(event.target)) {
-      dropdownContent.classList.add("hidden");
-      caretIcon.classList.remove("rotate-90"); // Ensure caret icon rotation is reset
-    }
-  });
+    // Close dropdown when clicking outside
+    document.addEventListener("click", function(event) {
+      if (!dropdownMenu.contains(event.target)) {
+        dropdownContent.classList.add("hidden");
+        caretIcon.classList.remove("rotate-90"); // Ensure caret icon rotation is reset
+      }
+    });
+  }
 });
 
