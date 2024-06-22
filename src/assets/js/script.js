@@ -193,7 +193,27 @@ document.addEventListener('DOMContentLoaded', function () {
   } 
 });
 
+// document.addEventListener('DOMContentLoaded', () => {
+//   const sidebarToggle = document.getElementById('sidebarToggle');
+//   const sidebar = document.getElementById('sidebar');
 
+//   if (!sidebarToggle || !sidebar) {
+//     return;
+//   }
+
+//   sidebarToggle.addEventListener('click', () => {
+//     sidebar.classList.toggle('hidden');
+//   });
+
+//   document.addEventListener('click', (event) => {
+//     const isClickInsideSidebar = sidebar.contains(event.target);
+//     const isClickInsideToggle = sidebarToggle.contains(event.target);
+
+//     if (!isClickInsideSidebar && !isClickInsideToggle && !sidebar.classList.contains('hidden')) {
+//       sidebar.classList.add('hidden');
+//     }
+//   });
+// });
 
 // drop down dashboard
 document.addEventListener("DOMContentLoaded", function() {
@@ -218,3 +238,18 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 });
 
+
+// top bottom link dashboard side bar
+function setTopLinksHeight() {
+  var windowHeight = window.innerHeight;
+  var bottomLinksElement = document.querySelector('.bottom-links');
+
+  if (bottomLinksElement) { // Check if element exists
+      var bottomLinksHeight = bottomLinksElement.offsetHeight;
+      var topLinksHeight = windowHeight - bottomLinksHeight;
+      document.querySelector('.top-links').style.height = topLinksHeight + 'px';
+  }
+}
+
+window.addEventListener('DOMContentLoaded', setTopLinksHeight);
+window.addEventListener('resize', setTopLinksHeight);
