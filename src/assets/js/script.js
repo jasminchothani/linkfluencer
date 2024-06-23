@@ -174,24 +174,24 @@ window.addEventListener('scroll', function() {
 
 
 // dashboard sidebar toggle
-// document.addEventListener('DOMContentLoaded', function () {
-//   const toggleSidebarBtn = document.getElementById('toggleSidebar');
-//   const sidebar = document.getElementById('sidebar');
+document.addEventListener('DOMContentLoaded', function () {
+  const toggleSidebarBtn = document.getElementById('toggleSidebar');
+  const sidebar = document.getElementById('sidebar');
 
-//   if (toggleSidebarBtn && sidebar) {
-//     toggleSidebarBtn.addEventListener('click', function () {
-//       sidebar.classList.toggle('-translate-x-full');
-//     });
+  if (toggleSidebarBtn && sidebar) {
+    toggleSidebarBtn.addEventListener('click', function () {
+      sidebar.classList.toggle('-translate-x-full');
+    });
 
-//     // Close sidebar when clicking outside of it
-//     document.addEventListener('click', function (event) {
-//       const isClickInside = toggleSidebarBtn.contains(event.target) || sidebar.contains(event.target);
-//       if (!isClickInside) {
-//         sidebar.classList.add('-translate-x-full');
-//       }
-//     });
-//   } 
-// });
+    // Close sidebar when clicking outside of it
+    document.addEventListener('click', function (event) {
+      const isClickInside = toggleSidebarBtn.contains(event.target) || sidebar.contains(event.target);
+      if (!isClickInside) {
+        sidebar.classList.add('-translate-x-full');
+      }
+    });
+  } 
+});
 
 // document.addEventListener('DOMContentLoaded', () => {
 //   const sidebarToggle = document.getElementById('sidebarToggle');
@@ -240,16 +240,16 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 // top bottom link dashboard side bar
-function setTopLinksHeight() {
-  var windowHeight = window.innerHeight;
-  var bottomLinksElement = document.querySelector('.bottom-links');
+// function setTopLinksHeight() {
+//   var windowHeight = window.innerHeight;
+//   var bottomLinksElement = document.querySelector('.bottom-links');
 
-  if (bottomLinksElement) { // Check if element exists
-      var bottomLinksHeight = bottomLinksElement.offsetHeight;
-      var topLinksHeight = windowHeight - bottomLinksHeight;
-      document.querySelector('.top-links').style.height = topLinksHeight + 'px';
-  }
-}
+//   if (bottomLinksElement) { // Check if element exists
+//       var bottomLinksHeight = bottomLinksElement.offsetHeight;
+//       var topLinksHeight = windowHeight - bottomLinksHeight;
+//       document.querySelector('.top-links').style.height = topLinksHeight + 'px';
+//   }
+// }
 
-window.addEventListener('DOMContentLoaded', setTopLinksHeight);
-window.addEventListener('resize', setTopLinksHeight);
+// window.addEventListener('DOMContentLoaded', setTopLinksHeight);
+// window.addEventListener('resize', setTopLinksHeight);
