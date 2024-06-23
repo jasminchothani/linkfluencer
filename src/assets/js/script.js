@@ -240,16 +240,16 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 // top bottom link dashboard side bar
-// function setTopLinksHeight() {
-//   var windowHeight = window.innerHeight;
-//   var bottomLinksElement = document.querySelector('.bottom-links');
+function setTopLinksHeight() {
+  var windowHeight = window.innerHeight;
+  var bottomLinksElement = document.querySelector('.bottom-links');
 
-//   if (bottomLinksElement) { // Check if element exists
-//       var bottomLinksHeight = bottomLinksElement.offsetHeight;
-//       var topLinksHeight = windowHeight - bottomLinksHeight;
-//       document.querySelector('.top-links').style.height = topLinksHeight + 'px';
-//   }
-// }
+  if (bottomLinksElement) { // Check if element exists
+      var bottomLinksHeight = bottomLinksElement.offsetHeight;
+      var topLinksHeight = windowHeight - bottomLinksHeight;
+      document.querySelector('.top-links').style.height = topLinksHeight + 'px';
+  }
+}
 
-// window.addEventListener('DOMContentLoaded', setTopLinksHeight);
-// window.addEventListener('resize', setTopLinksHeight);
+window.addEventListener('DOMContentLoaded', setTopLinksHeight);
+window.addEventListener('resize', setTopLinksHeight);
