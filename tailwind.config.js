@@ -69,6 +69,9 @@ module.exports = {
         },
         palegray: {
           palegray: 'var(--palegray)',
+        },
+        darkblue: {
+          darkblue: 'var(--darkblue)',
         }
       },
       // backgroundColor: {

@@ -253,3 +253,12 @@ function setTopLinksHeight() {
 
 window.addEventListener('DOMContentLoaded', setTopLinksHeight);
 window.addEventListener('resize', setTopLinksHeight);
+
+
+//modal dashboard
+function toggleModal() {
+  const modalContainer = document.getElementById('modal-container');
+  modalContainer.classList.toggle('hidden');
+  modalContainer.classList.toggle('flex');
+  document.body.classList.toggle('overflow-hidden');
+}
