@@ -12,11 +12,13 @@ module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
     extend: {
-      maxWidth:{
+      maxWidth: {
         // 1170: '1170px',
         // 95: '95%',
-        containerxl: '1320px', 
+        containerxl: '1320px',
         containerxxl: '1720px',
+        container1810: '1840px',
+        container1920: '1920px'
       },
       colors: {
         blue: {
@@ -99,11 +101,11 @@ module.exports = {
         lh21: '21.6px',
       },
       boxShadow: {
-       customblackblue: '0px 8px 20px 0px var(--blackblue)',
-       customblackdark: '0px 20px 24px -4px var(--blackdark)',
-       customblue: '4px 0px 0px -1px var(--blue) inset',
+        customblackblue: '0px 8px 20px 0px var(--blackblue)',
+        customblackdark: '0px 20px 24px -4px var(--blackdark)',
+        customblue: '4px 0px 0px -1px var(--blue) inset',
       },
-      gap:{
+      gap: {
         columngap136: '136px',
       },
       screens: {
@@ -115,7 +117,11 @@ module.exports = {
       },
       borderRadius: {
         rouundedllg: '10px',
-      }
+      },
+      backgroundPosition: {
+        customposition: '90% 50%',
+        custompositionedit: '96% 50%'
+      },
     }
     ,
   },

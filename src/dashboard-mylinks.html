@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linkfluencer</title>
+    <!-- fevicon icon -->
+    <link rel="icon" type="image/x-icon" href="assets/images/responsivelogo.svg">
+
+    <!-- taiwind css -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+    <!-- output css -->
+    <link href="./assets/css/output.css" rel="stylesheet">
+
+    <!-- swiper css -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> -->
+</head>
+
+<body>
+    <header
+        class="bg-blue-blue sticky z-50 py-4 px-4 2xl:px-10 top-0 transition-all duration-300 ease-in-out border-b-2 border-green-green"
+        id="mainHeader">
+        <nav class="max-w-container1810 mx-auto flex justify-between items-center nav-custome flex-wrap">
+            <div class="w-auto">
+                <a href="index.html">
+                    <img src="./assets/images/logo.svg" alt="logo" width="192" height="50"
+                        class="hidden md:inline-block">
+                    <img src="./assets/images/responsivelogo.svg" alt="logo.." width="50" height="50"
+                        class="inline-block md:hidden">
+                </a>
+            </div>
+
+            <div class="w-auto flex justify-center sm:justify-start items-center gap-2 md:gap-10">
+                <div class="flex gap-6 items-center">
+                    <div class="relative">
+                        <div
+                            class="w-8 h-8 flex items-center justify-center relative after:'' after:absolute after:top-2 after:right-1 after:w-2 after:h-2 after:bg-valentinered-valentinered after:rounded-full after:inline-block">
+                            <img src="assets/images/notificationicon.svg" alt="notification icon" width="19"
+                                height="25">
+                        </div>
+                    </div>
+                    <div>
+                        <img src="assets/images/Profile.svg" alt="profile image" width="50" height="50">
+                    </div>
+                </div>
+                <div>
+                    <select name="language" id="language"
+                        class="bg-blue-blue text-white-white outline-none text-base md:text-xl leading-6 font-semibold pr-[10px]">
+                        <option value="english">EN</option>
+                        <option value="english">EN</option>
+                    </select>
+                </div>
+                <div class="inline-block xl:hidden">
+                    <button id="toggleSidebar" class="p-2 rounded bg-transparent-transparent">
+                        <img src="assets/images/sidebar-icon.svg" alt="toggle icon" width="24" height="24">
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="bg-white-white min-h-[calc(100vh-88px)] relative mx-auto max-w-container1920">
+        <!-- Sidebar -->
+        <aside id="sidebar"
+            class="w-[280px] z-[1] min-h-full bg-white-white shadow-customblackdark pt-20 lg:pt-[124px] top-0 transform -translate-x-full xl:translate-x-0 fixed xl:transform-none transition-transform duration-300 flex flex-col justify-between h-[calc(100%-88px)]">
+            <!-- <div class=""> -->
+            <div class="top-links overflow-auto scrollbar-thin scrollbar-thumb-blue-blue scrollbar-track-green-green">
+                <ul class="">
+                    <li class="mb-3 lg:mb-6">
+                        <a href="javascript:void(0)"
+                            class="py-4 pr-5 pl-10 capitalize !leading-6 text-xl text-blue-blue flex items-center shadow-customblue bg-darkgreen-darkgreen font-bold hover:shadow-customblue hover:bg-darkgreen-darkgreen active:shadow-customblue active:bg-darkgreen-darkgreen active:font-bold">
+                            <img src="assets/images/HouseLine.svg" alt="house img" width="25" height="24"
+                                class="inline-block me-4">
+                            <span class="-mb-1">Dashboard </span>
+                        </a>
+                    </li>
+                    <li class="mb-3 lg:mb-6">
+                        <a href="javascript:void(0)"
+                            class="py-4 pr-5 pl-10 capitalize !leading-6 font-normal text-xl text-blue-blue flex items-center hover:shadow-customblue hover:bg-darkgreen-darkgreen active:shadow-customblue active:bg-darkgreen-darkgreen active:font-bold">
+                            <img src="assets/images/mylinksiconsidebar.svg" alt="my link img" width="25" height="24"
+                                class="inline-block me-4">
+                            <span class="-mb-1">My Links </span>
+                        </a>
+                    </li>
+                    <li class="mb-3 lg:mb-6">
+                        <a href="javascript:void(0)"
+                            class="py-4 pr-5 pl-10 capitalize !leading-6 font-normal text-xl text-blue-blue flex items-center hover:shadow-customblue hover:bg-darkgreen-darkgreen active:shadow-customblue active:bg-darkgreen-darkgreen active:font-bold">
+                            <img src="assets/images/bulkuploadsidebar.svg" alt="bulkupload img" width="25" height="24"
+                                class="inline-block me-4">
+                            <span class="-mb-1">Bulk Upload </span>
+                        </a>
+                    </li>
+                    <li class="mb-3 lg:mb-6">
+                        <a href="javascript:void(0)"
+                            class="py-4 pr-5 pl-10 capitalize !leading-6 font-normal text-xl text-blue-blue flex items-center hover:shadow-customblue hover:bg-darkgreen-darkgreen active:shadow-customblue active:bg-darkgreen-darkgreen active:font-bold">
+                            <img src="assets/images/analyticssidebaricon.svg" alt="analytic img" width="25" height="24"
+                                class="inline-block me-4">
+                            <span class="-mb-1">Analytics </span>
+                        </a>
+                    </li>
+                    <li class="mb-3 lg:mb-6">
+                        <a href="javascript:void(0)"
+                            class="py-4 pr-5 pl-10 capitalize !leading-6 font-normal text-xl text-blue-blue flex items-center hover:shadow-customblue hover:bg-darkgreen-darkgreen active:shadow-customblue active:bg-darkgreen-darkgreen active:font-bold">
+                            <img src="assets/images/icon-campaign.svg" alt="Campaign img" width="25" height="24"
+                                class="inline-block me-4">
+                            <span class="-mb-1">Campaign </span>
+                            <img src="assets/images/coming-soon-unscreen.gif" alt="coming soon img" width="30"
+                                height="30" class="inline-block ms-auto">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="bottom-links">
+                <ul class="border-t-4 border-green-green pt-3 lg:pt-6">
+                    <li class="relative mb-3 lg:mb-6">
+                        <a href="javascript:void(0);"
+                            class="py-4 pr-5 pl-10 capitalize !leading-6 font-normal text-xl text-blue-blue flex items-center hover:shadow-customblue hover:bg-darkgreen-darkgreen active:shadow-customblue active:bg-darkgreen-darkgreen active:font-bold"
+                            id="dropdownMenu2">
+                            <img src="assets/images/profilesidebar.svg" alt="profile img" width="25" height="24"
+                                class="inline-block me-4">
+                            <span>Profile </span>
+                            <img src="assets/images/Caretleft.svg" alt="caret img" width="16" height="16"
+                                class="inline-block ms-auto transition-transform transform rotate-0" id="caretIcon">
+                        </a>
+                        <ul class="hidden" id="dropdownContent">
+                            <li>
+                                <a href="javascript:void(0);"
+                                    class="py-4 pr-5 pl-16 capitalize !leading-6 font-normal text-xl text-blue-blue flex items-center hover:shadow-customblue hover:bg-darkgreen-darkgreen active:shadow-customblue active:bg-darkgreen-darkgreen active:font-bold">
+                                    <img src="assets/images/sidebarwallet.svg" alt="wallet img" width="25" height="24"
+                                        class="inline-block me-4">
+                                    <span>My Wallet </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);"
+                                    class="py-4 pr-5 pl-16 capitalize !leading-6 font-normal text-xl text-blue-blue flex items-center hover:shadow-customblue hover:bg-darkgreen-darkgreen active:shadow-customblue active:bg-darkgreen-darkgreen active:font-bold">
+                                    <img src="assets/images/profilesidebar.svg" alt="profile img" width="25" height="24"
+                                        class="inline-block me-4">
+                                    <span>Edit Profile </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="mb-3 lg:mb-6">
+                        <a href="javascript:void(0)"
+                            class="py-4 pr-5 pl-10 capitalize !leading-6 font-normal text-xl text-blue-blue flex items-center hover:shadow-customblue hover:bg-darkgreen-darkgreen active:shadow-customblue active:bg-darkgreen-darkgreen active:font-bold">
+                            <img src="assets/images/settingicon.svg" alt="setting img" width="25" height="24"
+                                class="inline-block me-4">
+                            <span class="-mb-1">Settings </span>
+                        </a>
+                    </li>
+
+                    <li class="mb-3 lg:mb-6">
+                        <a href="index.html"
+                            class="py-4 pr-5 pl-10 capitalize !leading-6 font-normal text-xl text-valentinered-valentinered flex items-center hover:shadow-customblue hover:bg-darkgreen-darkgreen active:shadow-customblue active:bg-darkgreen-darkgreen active:font-bold">
+                            <img src="assets/images/logouticon.svg" alt="logout img" width="25" height="24"
+                                class="inline-block me-4">
+                            <span class="-mb-1">Log Out </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- </div> -->
+        </aside>
+
+        <!-- Main Content Area -->
+        <main id="mainContent"
+            class="px-4 pt-4 xl:px-0 w-full xl:w-[calc(100%-360px)] transition-transform duration-300 static xl:relative xl:left-[320px]">
+            <!-- top header -->
+            <section>
+                <div class="flex">
+                    <div class="flex flex-col">
+                        <div class="flex items-cente gap-4 mb-4">
+                            <div>
+                                <div class="font-normal text-xl !leading-6 text-lightgrey-lightgrey mb-2 capitalize">
+                                    Welcome</div>
+                                <div class="text-2xl !leading-7 font-bold text-blue-blue capitalize">👋 hey, simon.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="">
+                            <nav class="flex items-center gap-4 flex-wrap" aria-label="Breadcrumb">
+                                <a href="dashboard.html"
+                                    class="font-normal text-xl !leading-6 text-lightgrey-lightgrey capitalize">Dashboard</a>
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.5 3.75L13.75 10L7.5 16.25" stroke="#020D3A" stroke-width="1.25"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                <a href="dashboard-mylinks.html"
+                                    class="font-bold text-xl !leading-6 text-blue-blue capitalize">Create Smart
+                                    Links</a>
+                            </nav>
+                        </div>
+                    </div>
+                    <!-- <div>
+                        hello
+                    </div> -->
+                </div>
+            </section>
+
+            <!-- main sub content -->
+            <section class="mt-5 lg:mt-10">
+                <div class="flex gap-6 flex-wrap lg:flex-nowrap">
+                    <div class="w-full lg:max-w-[504px]">
+                        <div class="border border-palegray-palegray rounded-lg px-6 py-[32px] h-full">
+                            <div class="flex justify-between items-center flex-wrap 2xl:flex-nowrap gap-3 2xl:gap-0">
+                                <div class="">
+                                    <p class="text-green-green text-lg !leading-[22px] font-bold mb-[14px] capitalize">
+                                        Clicks Left</p>
+                                    <h2 class="text-4xl !leading-[43px] font-bold text-blue-blue">24550/<span
+                                            class="text-green-green text-2xl !leading-7">25000</span></h2>
+                                </div>
+                                <div class="static m-2 md:m-0 md:relative md:-ml-10 md:-top-2">
+                                    <img src="assets/images/linkarrow.svg" alt="link icon" width="102" height="102"
+                                        class="">
+                                </div>
+                                <div>
+                                    <button
+                                        class="btn-green text-blue-blue font-bold text-base px-3 py-2 lg:px-6 lg:text-xl !leading-6 rounded-md capitalize">
+                                        <img src="assets/images/add-buttonicon.svg" alt="add button img"
+                                            class="inline-block mr-2">
+                                        Refuel Now
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="w-full lg:max-w-[1032px]">
+                        <div class="border border-palegray-palegray rounded-lg px-6 2xl:px-10 py-[25px] h-full">
+                            <div class="flex justify-between items-center flex-wrap 2xl:flex-nowrap gap-3">
+                                <div>
+                                    <p class="text-green-green text-lg !leading-[22px] font-bold capitalize">Create <br>
+                                        Smart Links</p>
+                                </div>
+                                <div>
+                                    <img src="assets/images/createsmartlinkicon.svg" alt="link icon" width="119"
+                                        height="119" class="">
+                                </div>
+                                <div class="max-w-[604px] w-full">
+                                    <div class="relative">
+                                        <input type="search"
+                                            class="py-[18.5px] bg-white-white  sm:pr-60 px-6 text-lightgrey-lightgrey font-bold rounded-[5px] bg-white border border-lightgrey-lightgrey placeholder-lightgrey-lightgrey focus:outline-none  block w-full text-xl !leading-6 text-ellipsis overflow-hidden"
+                                            placeholder="paste your link here....." required />
+                                        <button type="submit"
+                                            class="btn-green text-blue-blue font-bold px-3 py-4 lg:px-10 text-lg !leading-5 rounded-md capitalize sm:absolute end-1 top-1 static mt-3 sm:mt-0">Create
+                                            Smart Link</button>
+                                    </div>
+                                    <div class="flex gap-2 justify-end items-center flex-wrap">
+                                        <a href="javascript:void(0)">
+                                            <img src="assets/images/facebookcreatelink.svg" alt="facebook icon"
+                                                width="30" height="30"
+                                                class="opacity-100 hover:opacity-80 transition-opacity duration-300">
+                                        </a>
+                                        <a href="javascript:void(0)">
+                                            <img src="assets/images/instragramcreatelink.svg" alt="instagram icon"
+                                                width="30" height="30"
+                                                class="opacity-100 hover:opacity-80 transition-opacity duration-300">
+                                        </a>
+                                        <a href="javascript:void(0)">
+                                            <img src="assets/images/twittercreatelink.svg" alt="twitter icon" width="30"
+                                                height="30"
+                                                class="opacity-100 hover:opacity-80 transition-opacity duration-300">
+                                        </a>
+                                        <a href="javascript:void(0)">
+                                            <img src="assets/images/tiktokecreatelink.svg" alt="ticktock icon"
+                                                width="30" height="30"
+                                                class="opacity-100 hover:opacity-80 transition-opacity duration-300">
+                                        </a>
+                                        <a href="javascript:void(0)">
+                                            <img src="assets/images/snapcreatelink.svg" alt="snap icon" width="30"
+                                                height="30"
+                                                class="opacity-100 hover:opacity-80 transition-opacity duration-300">
+                                        </a>
+                                        <a href="javascript:void(0)">
+                                            <img src="assets/images/youtubecreatelink.svg" alt="youtube icon" width="30"
+                                                height="30"
+                                                class="opacity-100 hover:opacity-80 transition-opacity duration-300">
+                                        </a>
+                                        <a href="javascript:void(0)">
+                                            <img src="assets/images/amazoncreatelink.svg" alt="amazon icon" width="30"
+                                                height="30"
+                                                class="opacity-100 hover:opacity-80 transition-opacity duration-300">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="my-5 lg:my-10 flex justify-between gap-3 flex-wrap">
+                    <div class="max-w-[504px] w-full">
+                        <input type="search"
+                            class="py-[19px] bg-cultured-cultured px-6 text-blue-blue font-bold rounded-[5px] bg-white border border-blue-blue placeholder-lightgrey-lightgrey focus:outline-none block w-full text-lg !leading-lh21"
+                            placeholder="Search Link">
+                    </div>
+
+                    <div>
+                        <select id=""
+                            class="bg-cultured-cultured border border-blue-blue text-blue-blue text-lg !leading-lh21 rounded-lg focus:outline-none block w-full py-[19px] px-4 appearance-none bg-[url('../../assets/images/Filters.svg')] bg-no-repeat bg-customposition pr-12">
+                            <option selected>Choose a link</option>
+                            <option value="link">link</option>
+                            <option value="link">link</option>
+                        </select>
+                    </div>
+                </div>
+
+            </section>
+            <section class="mt-5 lg:mt-10">
+                <div class="grid gap-x-6 gap-y-10 grid-cols-1 lg:grid-cols-2">
+                    <div
+                        class="w-full lg:max-w-3xl py-6 px-6 lg:px-10 rounded-rouundedllg border border-palegray-palegray">
+                        <div class="flex items-center mb-2 gap-3 lg:gap-6 flex-wrap">
+                            <div>
+                                <img src="assets/images/instagramshadow.svg" class="rounded-full" alt="Instagram Logo"
+                                    width="48" height="48">
+                            </div>
+                            <div class="flex flex-col w-full">
+                                <div class="font-semibold text-xl !leading-6 text-blue-blue">Instagram</div>
+                                <div class="flex justify-between items-center gap-3 flex-wrap">
+                                    <a href="javascript:void()"
+                                        class="text-green-green underline text-lg !leading-lh21 font-semibold max-w-[425px] w-full">instaxyz.co.in/linkfluencer</a>
+                                    <div class="flex gap-6">
+                                        <button class="bg-darkblue-darkblue rounded-md px-[13px] py-[6px]">
+                                            <img src="assets/images/copylink-btn.svg" alt="copy link img" width="24"
+                                                height="24">
+                                        </button>
+                                        <button onclick="toggleModal()"
+                                            class="bg-darkblue-darkblue rounded-md px-[13px] py-[6px]">
+                                            <img src="assets/images/editlinkbtn.svg" alt="edit link img" width="24"
+                                                height="24">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex justify-between mt-6 gap-6 flex-wrap lg:flex-wrap">
+                            <div>
+                                <div class="font-semibold text-lg !leading-lh21 text-lightgrey-lightgrey mb-2">Share
+                                    link </div>
+
+                                <div class="flex gap-3 2xl:gap-6 items-center flex-wrap">
+                                    <a href="javascript:void(0)">
+                                        <img src="assets/images/facebookcreatelink.svg" alt="facebook icon" width="30"
+                                            height="30"
+                                            class="opacity-100 hover:opacity-80 transition-opacity duration-300">
+                                    </a>
+                                    <a href="javascript:void(0)">
+                                        <img src="assets/images/instragramcreatelink.svg" alt="instagram icon"
+                                            width="30" height="30"
+                                            class="opacity-100 hover:opacity-80 transition-opacity duration-300">
+                                    </a>
+                                    <a href="javascript:void(0)">
+                                        <img src="assets/images/twittercreatelink.svg" alt="twitter icon" width="30"
+                                            height="30"
+                                            class="opacity-100 hover:opacity-80 transition-opacity duration-300">
+                                    </a>
+                                    <a href="javascript:void(0)">
+                                        <img src="assets/images/tiktokecreatelink.svg" alt="ticktock icon" width="30"
+                                            height="30"
+                                            class="opacity-100 hover:opacity-80 transition-opacity duration-300">
+                                    </a>
+                                    <a href="javascript:void(0)">
+                                        <img src="assets/images/snapcreatelink.svg" alt="snap icon" width="30"
+                                            height="30"
+                                            class="opacity-100 hover:opacity-80 transition-opacity duration-300">
+                                    </a>
+                                    <a href="javascript:void(0)">
+                                        <img src="assets/images/youtubecreatelink.svg" alt="youtube icon" width="30"
+                                            height="30"
+                                            class="opacity-100 hover:opacity-80 transition-opacity duration-300">
+                                    </a>
+                                    <a href="javascript:void(0)">
+                                        <img src="assets/images/amazoncreatelink.svg" alt="amazon icon" width="30"
+                                            height="30"
+                                            class="opacity-100 hover:opacity-80 transition-opacity duration-300">
+                                    </a>
+                                </div>
+
+                            </div>
+
+                            <div class="">
+                                <div class="text-2xl !leading-7 font-bold text-blue-blue text-start md:text-end mb-1">10
+                                </div>
+                                <div
+                                    class="text-xl !leading-6 font-semibold text-lightgrey-lightgrey text-start md:text-end capitalize">
+                                    Total Clicks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="w-full lg:max-w-3xl py-6 px-6 lg:px-10 rounded-rouundedllg border border-palegray-palegray">
+                        <div class="flex items-center mb-2 gap-3 lg:gap-6 flex-wrap">
+                            <div>
+                                <img src="assets/images/instagramshadow.svg" class="rounded-full" alt="Instagram Logo"
+                                    width="48" height="48">
+                            </div>
+                            <div class="flex flex-col w-full">
+                                <div class="font-semibold text-xl !leading-6 text-blue-blue">Instagram</div>
+                                <div class="flex justify-between items-center gap-3 flex-wrap">
+                                    <a href="javascript:void()"
+                                        class="text-green-green underline text-lg !leading-lh21 font-semibold max-w-[425px] w-full">instaxyz.co.in/linkfluencer</a>
+                                    <div class="flex gap-6">
+                                        <button class="bg-darkblue-darkblue rounded-md px-[13px] py-[6px]">
+                                            <img src="assets/images/copylink-btn.svg" alt="copy link img" width="24"
+                                                height="24">
+                                        </button>
+                                        <button onclick="toggleModal()"
+                                            class="bg-darkblue-darkblue rounded-md px-[13px] py-[6px]">
+                                            <img src="assets/images/editlinkbtn.svg" alt="edit link img" width="24"
+                                                height="24">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex justify-between mt-6 gap-6 flex-wrap lg:flex-wrap">
+                            <div>
+                                <div class="font-semibold text-lg !leading-lh21 text-lightgrey-lightgrey mb-2">Share
+                                    link </div>
+
+                                <div class="flex gap-3 2xl:gap-6 items-center flex-wrap">
+                                    <a href="javascript:void(0)">
+                                        <img src="assets/images/facebookcreatelink.svg" alt="facebook icon" width="30"
+                                            height="30"
+                                            class="opacity-100 hover:opacity-80 transition-opacity duration-300">
+                                    </a>
+                                    <a href="javascript:void(0)">
+                                        <img src="assets/images/instragramcreatelink.svg" alt="instagram icon"
+                                            width="30" height="30"
+                                            class="opacity-100 hover:opacity-80 transition-opacity duration-300">
+                                    </a>
+                                    <a href="javascript:void(0)">
+                                        <img src="assets/images/twittercreatelink.svg" alt="twitter icon" width="30"
+                                            height="30"
+                                            class="opacity-100 hover:opacity-80 transition-opacity duration-300">
+                                    </a>
+                                    <a href="javascript:void(0)">
+                                        <img src="assets/images/tiktokecreatelink.svg" alt="ticktock icon" width="30"
+                                            height="30"
+                                            class="opacity-100 hover:opacity-80 transition-opacity duration-300">
+                                    </a>
+                                    <a href="javascript:void(0)">
+                                        <img src="assets/images/snapcreatelink.svg" alt="snap icon" width="30"
+                                            height="30"
+                                            class="opacity-100 hover:opacity-80 transition-opacity duration-300">
+                                    </a>
+                                    <a href="javascript:void(0)">
+                                        <img src="assets/images/youtubecreatelink.svg" alt="youtube icon" width="30"
+                                            height="30"
+                                            class="opacity-100 hover:opacity-80 transition-opacity duration-300">
+                                    </a>
+                                    <a href="javascript:void(0)">
+                                        <img src="assets/images/amazoncreatelink.svg" alt="amazon icon" width="30"
+                                            height="30"
+                                            class="opacity-100 hover:opacity-80 transition-opacity duration-300">
+                                    </a>
+                                </div>
+
+                            </div>
+
+                            <div class="">
+                                <div class="text-2xl !leading-7 font-bold text-blue-blue text-start md:text-end mb-1">10
+                                </div>
+                                <div
+                                    class="text-xl !leading-6 font-semibold text-lightgrey-lightgrey text-start md:text-end capitalize">
+                                    Total Clicks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="w-full lg:max-w-3xl py-6 px-6 lg:px-10 rounded-rouundedllg border border-palegray-palegray">
+                        <div class="flex items-center mb-2 gap-3 lg:gap-6 flex-wrap">
+                            <div>
+                                <img src="assets/images/instagramshadow.svg" class="rounded-full" alt="Instagram Logo"
+                                    width="48" height="48">
+                            </div>
+                            <div class="flex flex-col w-full">
+                                <div class="font-semibold text-xl !leading-6 text-blue-blue">Instagram</div>
+                                <div class="flex justify-between items-center gap-3 flex-wrap">
+                                    <a href="javascript:void()"
+                                        class="text-green-green underline text-lg !leading-lh21 font-semibold max-w-[425px] w-full">instaxyz.co.in/linkfluencer</a>
+                                    <div class="flex gap-6">
+                                        <button class="bg-darkblue-darkblue rounded-md px-[13px] py-[6px]">
+                                            <img src="assets/images/copylink-btn.svg" alt="copy link img" width="24"
+                                                height="24">
+                                        </button>
+                                        <button onclick="toggleModal()"
+                                            class="bg-darkblue-darkblue rounded-md px-[13px] py-[6px]">
+                                            <img src="assets/images/editlinkbtn.svg" alt="edit link img" width="24"
+                                                height="24">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex justify-between mt-6 gap-6 flex-wrap lg:flex-wrap">
+                            <div>
+                                <div class="font-semibold text-lg !leading-lh21 text-lightgrey-lightgrey mb-2">Share
+                                    link </div>
+
+                                <div class="flex gap-3 2xl:gap-6 items-center flex-wrap">
+                                    <a href="javascript:void(0)">
+                                        <img src="assets/images/facebookcreatelink.svg" alt="facebook icon" width="30"
+                                            height="30"
+                                            class="opacity-100 hover:opacity-80 transition-opacity duration-300">
+                                    </a>
+                                    <a href="javascript:void(0)">
+                                        <img src="assets/images/instragramcreatelink.svg" alt="instagram icon"
+                                            width="30" height="30"
+                                            class="opacity-100 hover:opacity-80 transition-opacity duration-300">
+                                    </a>
+                                    <a href="javascript:void(0)">
+                                        <img src="assets/images/twittercreatelink.svg" alt="twitter icon" width="30"
+                                            height="30"
+                                            class="opacity-100 hover:opacity-80 transition-opacity duration-300">
+                                    </a>
+                                    <a href="javascript:void(0)">
+                                        <img src="assets/images/tiktokecreatelink.svg" alt="ticktock icon" width="30"
+                                            height="30"
+                                            class="opacity-100 hover:opacity-80 transition-opacity duration-300">
+                                    </a>
+                                    <a href="javascript:void(0)">
+                                        <img src="assets/images/snapcreatelink.svg" alt="snap icon" width="30"
+                                            height="30"
+                                            class="opacity-100 hover:opacity-80 transition-opacity duration-300">
+                                    </a>
+                                    <a href="javascript:void(0)">
+                                        <img src="assets/images/youtubecreatelink.svg" alt="youtube icon" width="30"
+                                            height="30"
+                                            class="opacity-100 hover:opacity-80 transition-opacity duration-300">
+                                    </a>
+                                    <a href="javascript:void(0)">
+                                        <img src="assets/images/amazoncreatelink.svg" alt="amazon icon" width="30"
+                                            height="30"
+                                            class="opacity-100 hover:opacity-80 transition-opacity duration-300">
+                                    </a>
+                                </div>
+
+                            </div>
+
+                            <div class="">
+                                <div class="text-2xl !leading-7 font-bold text-blue-blue text-start md:text-end mb-1">10
+                                </div>
+                                <div
+                                    class="text-xl !leading-6 font-semibold text-lightgrey-lightgrey text-start md:text-end capitalize">
+                                    Total Clicks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="w-full lg:max-w-3xl py-6 px-6 lg:px-10 rounded-rouundedllg border border-palegray-palegray">
+                        <div class="flex items-center mb-2 gap-3 lg:gap-6 flex-wrap">
+                            <div>
+                                <img src="assets/images/instagramshadow.svg" class="rounded-full" alt="Instagram Logo"
+                                    width="48" height="48">
+                            </div>
+                            <div class="flex flex-col w-full">
+                                <div class="font-semibold text-xl !leading-6 text-blue-blue">Instagram</div>
+                                <div class="flex justify-between items-center gap-3 flex-wrap">
+                                    <a href="javascript:void()"
+                                        class="text-green-green underline text-lg !leading-lh21 font-semibold max-w-[425px] w-full">instaxyz.co.in/linkfluencer</a>
+                                    <div class="flex gap-6">
+                                        <button class="bg-darkblue-darkblue rounded-md px-[13px] py-[6px]">
+                                            <img src="assets/images/copylink-btn.svg" alt="copy link img" width="24"
+                                                height="24">
+                                        </button>
+                                        <button onclick="toggleModal()"
+                                            class="bg-darkblue-darkblue rounded-md px-[13px] py-[6px]">
+                                            <img src="assets/images/editlinkbtn.svg" alt="edit link img" width="24"
+                                                height="24">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex justify-between mt-6 gap-6 flex-wrap lg:flex-wrap">
+                            <div>
+                                <div class="font-semibold text-lg !leading-lh21 text-lightgrey-lightgrey mb-2">Share
+                                    link </div>
+
+                                <div class="flex gap-3 2xl:gap-6 items-center flex-wrap">
+                                    <a href="javascript:void(0)">
+                                        <img src="assets/images/facebookcreatelink.svg" alt="facebook icon" width="30"
+                                            height="30"
+                                            class="opacity-100 hover:opacity-80 transition-opacity duration-300">
+                                    </a>
+                                    <a href="javascript:void(0)">
+                                        <img src="assets/images/instragramcreatelink.svg" alt="instagram icon"
+                                            width="30" height="30"
+                                            class="opacity-100 hover:opacity-80 transition-opacity duration-300">
+                                    </a>
+                                    <a href="javascript:void(0)">
+                                        <img src="assets/images/twittercreatelink.svg" alt="twitter icon" width="30"
+                                            height="30"
+                                            class="opacity-100 hover:opacity-80 transition-opacity duration-300">
+                                    </a>
+                                    <a href="javascript:void(0)">
+                                        <img src="assets/images/tiktokecreatelink.svg" alt="ticktock icon" width="30"
+                                            height="30"
+                                            class="opacity-100 hover:opacity-80 transition-opacity duration-300">
+                                    </a>
+                                    <a href="javascript:void(0)">
+                                        <img src="assets/images/snapcreatelink.svg" alt="snap icon" width="30"
+                                            height="30"
+                                            class="opacity-100 hover:opacity-80 transition-opacity duration-300">
+                                    </a>
+                                    <a href="javascript:void(0)">
+                                        <img src="assets/images/youtubecreatelink.svg" alt="youtube icon" width="30"
+                                            height="30"
+                                            class="opacity-100 hover:opacity-80 transition-opacity duration-300">
+                                    </a>
+                                    <a href="javascript:void(0)">
+                                        <img src="assets/images/amazoncreatelink.svg" alt="amazon icon" width="30"
+                                            height="30"
+                                            class="opacity-100 hover:opacity-80 transition-opacity duration-300">
+                                    </a>
+                                </div>
+
+                            </div>
+
+                            <div class="">
+                                <div class="text-2xl !leading-7 font-bold text-blue-blue text-start md:text-end mb-1">10
+                                </div>
+                                <div
+                                    class="text-xl !leading-6 font-semibold text-lightgrey-lightgrey text-start md:text-end capitalize">
+                                    Total Clicks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="w-full lg:max-w-3xl py-6 px-6 lg:px-10 rounded-rouundedllg border border-palegray-palegray">
+                        <div class="flex items-center mb-2 gap-3 lg:gap-6 flex-wrap">
+                            <div>
+                                <img src="assets/images/instagramshadow.svg" class="rounded-full" alt="Instagram Logo"
+                                    width="48" height="48">
+                            </div>
+                            <div class="flex flex-col w-full">
+                                <div class="font-semibold text-xl !leading-6 text-blue-blue">Instagram</div>
+                                <div class="flex justify-between items-center gap-3 flex-wrap">
+                                    <a href="javascript:void()"
+                                        class="text-green-green underline text-lg !leading-lh21 font-semibold max-w-[425px] w-full">instaxyz.co.in/linkfluencer</a>
+                                    <div class="flex gap-6">
+                                        <button class="bg-darkblue-darkblue rounded-md px-[13px] py-[6px]">
+                                            <img src="assets/images/copylink-btn.svg" alt="copy link img" width="24"
+                                                height="24">
+                                        </button>
+                                        <button onclick="toggleModal()"
+                                            class="bg-darkblue-darkblue rounded-md px-[13px] py-[6px]">
+                                            <img src="assets/images/editlinkbtn.svg" alt="edit link img" width="24"
+                                                height="24">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex justify-between mt-6 gap-6 flex-wrap lg:flex-wrap">
+                            <div>
+                                <div class="font-semibold text-lg !leading-lh21 text-lightgrey-lightgrey mb-2">Share
+                                    link </div>
+
+                                <div class="flex gap-3 2xl:gap-6 items-center flex-wrap">
+                                    <a href="javascript:void(0)">
+                                        <img src="assets/images/facebookcreatelink.svg" alt="facebook icon" width="30"
+                                            height="30"
+                                            class="opacity-100 hover:opacity-80 transition-opacity duration-300">
+                                    </a>
+                                    <a href="javascript:void(0)">
+                                        <img src="assets/images/instragramcreatelink.svg" alt="instagram icon"
+                                            width="30" height="30"
+                                            class="opacity-100 hover:opacity-80 transition-opacity duration-300">
+                                    </a>
+                                    <a href="javascript:void(0)">
+                                        <img src="assets/images/twittercreatelink.svg" alt="twitter icon" width="30"
+                                            height="30"
+                                            class="opacity-100 hover:opacity-80 transition-opacity duration-300">
+                                    </a>
+                                    <a href="javascript:void(0)">
+                                        <img src="assets/images/tiktokecreatelink.svg" alt="ticktock icon" width="30"
+                                            height="30"
+                                            class="opacity-100 hover:opacity-80 transition-opacity duration-300">
+                                    </a>
+                                    <a href="javascript:void(0)">
+                                        <img src="assets/images/snapcreatelink.svg" alt="snap icon" width="30"
+                                            height="30"
+                                            class="opacity-100 hover:opacity-80 transition-opacity duration-300">
+                                    </a>
+                                    <a href="javascript:void(0)">
+                                        <img src="assets/images/youtubecreatelink.svg" alt="youtube icon" width="30"
+                                            height="30"
+                                            class="opacity-100 hover:opacity-80 transition-opacity duration-300">
+                                    </a>
+                                    <a href="javascript:void(0)">
+                                        <img src="assets/images/amazoncreatelink.svg" alt="amazon icon" width="30"
+                                            height="30"
+                                            class="opacity-100 hover:opacity-80 transition-opacity duration-300">
+                                    </a>
+                                </div>
+
+                            </div>
+
+                            <div class="">
+                                <div class="text-2xl !leading-7 font-bold text-blue-blue text-start md:text-end mb-1">10
+                                </div>
+                                <div
+                                    class="text-xl !leading-6 font-semibold text-lightgrey-lightgrey text-start md:text-end capitalize">
+                                    Total Clicks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="w-full lg:max-w-3xl py-6 px-6 lg:px-10 rounded-rouundedllg border border-palegray-palegray">
+                        <div class="flex items-center mb-2 gap-3 lg:gap-6 flex-wrap">
+                            <div>
+                                <img src="assets/images/instagramshadow.svg" class="rounded-full" alt="Instagram Logo"
+                                    width="48" height="48">
+                            </div>
+                            <div class="flex flex-col w-full">
+                                <div class="font-semibold text-xl !leading-6 text-blue-blue">Instagram</div>
+                                <div class="flex justify-between items-center gap-3 flex-wrap">
+                                    <a href="javascript:void()"
+                                        class="text-green-green underline text-lg !leading-lh21 font-semibold max-w-[425px] w-full">instaxyz.co.in/linkfluencer</a>
+                                    <div class="flex gap-6">
+                                        <button class="bg-darkblue-darkblue rounded-md px-[13px] py-[6px]">
+                                            <img src="assets/images/copylink-btn.svg" alt="copy link img" width="24"
+                                                height="24">
+                                        </button>
+                                        <button onclick="toggleModal()"
+                                            class="bg-darkblue-darkblue rounded-md px-[13px] py-[6px]">
+                                            <img src="assets/images/editlinkbtn.svg" alt="edit link img" width="24"
+                                                height="24">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex justify-between mt-6 gap-6 flex-wrap lg:flex-wrap">
+                            <div>
+                                <div class="font-semibold text-lg !leading-lh21 text-lightgrey-lightgrey mb-2">Share
+                                    link </div>
+
+                                <div class="flex gap-3 2xl:gap-6 items-center flex-wrap">
+                                    <a href="javascript:void(0)">
+                                        <img src="assets/images/facebookcreatelink.svg" alt="facebook icon" width="30"
+                                            height="30"
+                                            class="opacity-100 hover:opacity-80 transition-opacity duration-300">
+                                    </a>
+                                    <a href="javascript:void(0)">
+                                        <img src="assets/images/instragramcreatelink.svg" alt="instagram icon"
+                                            width="30" height="30"
+                                            class="opacity-100 hover:opacity-80 transition-opacity duration-300">
+                                    </a>
+                                    <a href="javascript:void(0)">
+                                        <img src="assets/images/twittercreatelink.svg" alt="twitter icon" width="30"
+                                            height="30"
+                                            class="opacity-100 hover:opacity-80 transition-opacity duration-300">
+                                    </a>
+                                    <a href="javascript:void(0)">
+                                        <img src="assets/images/tiktokecreatelink.svg" alt="ticktock icon" width="30"
+                                            height="30"
+                                            class="opacity-100 hover:opacity-80 transition-opacity duration-300">
+                                    </a>
+                                    <a href="javascript:void(0)">
+                                        <img src="assets/images/snapcreatelink.svg" alt="snap icon" width="30"
+                                            height="30"
+                                            class="opacity-100 hover:opacity-80 transition-opacity duration-300">
+                                    </a>
+                                    <a href="javascript:void(0)">
+                                        <img src="assets/images/youtubecreatelink.svg" alt="youtube icon" width="30"
+                                            height="30"
+                                            class="opacity-100 hover:opacity-80 transition-opacity duration-300">
+                                    </a>
+                                    <a href="javascript:void(0)">
+                                        <img src="assets/images/amazoncreatelink.svg" alt="amazon icon" width="30"
+                                            height="30"
+                                            class="opacity-100 hover:opacity-80 transition-opacity duration-300">
+                                    </a>
+                                </div>
+
+                            </div>
+
+                            <div class="">
+                                <div class="text-2xl !leading-7 font-bold text-blue-blue text-start md:text-end mb-1">10
+                                </div>
+                                <div
+                                    class="text-xl !leading-6 font-semibold text-lightgrey-lightgrey text-start md:text-end capitalize">
+                                    Total Clicks</div>
+                            </div>
+                        </div>
+                    </div>                   
+                </div>
+            </section>
+            <footer class="p-4 bg-white-white">
+                <p class="font-bold text-sm text-center !leading-4">© 2024 Linkfluencer</p>
+            </footer>
+        </main>
+    </div>
+    <div class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden items-center justify-center px-4" id="modal-container">
+        <div
+            class="relative w-full max-w-[584px] mx-auto rounded-[10px] border border-palegray-palegray bg-white-white p-5 lg:px-10 lg:pb-10 pt-6">
+            <div class="flex justify-between items-center">
+                <div class="text-xl lg:text-2xl !leading-7 text-blue-blue capitalize font-bold">Edit Link
+                </div>
+                <button class=" rounded-full p-1" onclick="toggleModal()">
+                    <img src="assets/images/closeicon.svg" alt="close icon" width="25" height="25">
+                </button>
+            </div>
+            <hr class="h-[1px] my-3 lg:my-6 bg-darkblue-darkblue border-0 dark:bg-white-white">
+            <div class="mb-6">
+                <label class="block text-blue-blue font-bold mb-2 text-xl !leading-6 capitalize"
+                    for="paste-link">Prefix</label>
+                <input type="text"
+                    class="appearance-none border border-blue-blue rounded w-full py-5 px-6 text-lightgrey-lightgrey bg-cultured-cultured text-lg font-bold !leading-5 focus:outline-none focus:shadow-outline"
+                    placeholder="enter prefix">
+            </div>
+            <div class="mb-6">
+                <label class="block text-blue-blue font-bold mb-2 text-xl !leading-6 capitalize" for="paste-link">Smart
+                    code *</label>
+                <input type="text"
+                    class="appearance-none border border-blue-blue rounded w-full py-5 px-6 text-lightgrey-lightgrey bg-cultured-cultured text-lg font-bold !leading-5 focus:outline-none focus:shadow-outline"
+                    placeholder="enter prefix">
+            </div>
+            <div class="mb-6">
+                <label class="block text-blue-blue font-bold mb-2 text-xl !leading-6 capitalize"
+                    for="paste-link">Tags</label>
+                <select id=""
+                    class="appearance-none border border-blue-blue rounded w-full py-5 px-6 text-lightgrey-lightgrey bg-cultured-cultured text-lg font-bold !leading-5 focus:outline-none focus:shadow-outline bg-[url('../../assets/images/Filters.svg')] bg-no-repeat bg-custompositionedit">
+                    <option selected>Choose a link</option>
+                    <option value="link">one</option>
+                    <option value="link">two</option>
+                </select>
+            </div>
+            <button
+                class="btn-green text-white-white font-bold py-4 px-10 text-2xl !leading-7 rounded-md capitalize w-full">
+                Update Link
+            </button>
+        </div>
+    </div>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
