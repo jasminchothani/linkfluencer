@@ -292,6 +292,7 @@ input[type=number] {
   --darkgreen: #020D3A0D;
   --palegray: #B3B3B266;
   --darkblue: #020D3A33;
+  --whitesmoke: #F5F6F7;
   /* hover effects */
   --greentwo: #20E086CC;
   --greendark: #20E086B2;
@@ -1198,6 +1199,10 @@ video {
   margin-right: 1rem;
 }
 
+.ms-2 {
+  margin-inline-start: 0.5rem;
+}
+
 .ms-auto {
   margin-inline-start: auto;
 }
@@ -1705,6 +1710,18 @@ video {
   row-gap: 2rem;
 }
 
+.space-x-2 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0.5rem * var(--tw-space-x-reverse));
+  margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-x-1 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0.25rem * var(--tw-space-x-reverse));
+  margin-left: calc(0.25rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
 .overflow-auto {
   overflow: auto;
 }
@@ -1869,6 +1886,11 @@ video {
   background-color: var(--darkgreen);
 }
 
+.bg-gray-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+}
+
 .bg-green-green {
   background-color: var(--green);
 }
@@ -1953,6 +1975,22 @@ video {
   padding: 2.25rem;
 }
 
+.p-\[\] {
+  padding: ;
+}
+
+.p-\[10\] {
+  padding: 10;
+}
+
+.p-\[10px\] {
+  padding: 10px;
+}
+
+.p-10 {
+  padding: 2.5rem;
+}
+
 .px-0 {
   padding-left: 0px;
   padding-right: 0px;
@@ -1991,6 +2029,11 @@ video {
 .px-\[13px\] {
   padding-left: 13px;
   padding-right: 13px;
+}
+
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
 }
 
 .py-2 {
@@ -2281,12 +2324,21 @@ video {
   line-height: 2.25rem;
 }
 
+.leading-\[19px\] {
+  line-height: 19px;
+}
+
 .leading-lh38 {
   line-height: 38.4px;
 }
 
 .leading-normal {
   line-height: 1.5;
+}
+
+.text-blue-500 {
+  --tw-text-opacity: 1;
+  color: rgb(59 130 246 / var(--tw-text-opacity));
 }
 
 .text-blue-blue {
@@ -2965,6 +3017,11 @@ video {
   border-color: var(--blue);
 }
 
+.hover\:bg-blue-500:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
+}
+
 .hover\:bg-blue-blue:hover {
   background-color: var(--blue);
 }
@@ -2987,6 +3044,10 @@ video {
 
 .hover\:bg-white-white:hover {
   background-color: var(--white);
+}
+
+.hover\:bg-whitesmoke-whitesmoke:hover {
+  background-color: var(--whitesmoke);
 }
 
 .hover\:text-blue-blue:hover {
@@ -3035,6 +3096,14 @@ video {
 
 .active\:bg-darkgreen-darkgreen:active {
   background-color: var(--darkgreen);
+}
+
+.active\:bg-whitesmoke-whitesmoke:active {
+  background-color: var(--whitesmoke);
+}
+
+.active\:bg-green-green:active {
+  background-color: var(--green);
 }
 
 .active\:font-bold:active {

@@ -74,6 +74,9 @@ module.exports = {
         },
         darkblue: {
           darkblue: 'var(--darkblue)',
+        },
+        whitesmoke: {
+          whitesmoke: 'var(--whitesmoke)',
         }
       },
       // backgroundColor: {
