@@ -77,6 +77,9 @@ module.exports = {
         },
         whitesmoke: {
           whitesmoke: 'var(--whitesmoke)',
+        },
+        greenlight: {
+          greenlight: 'var(--greenlight)',
         }
       },
       // backgroundColor: {
