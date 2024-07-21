@@ -274,85 +274,193 @@
                 </div>
 
             </section>
+
             <section>
-                <div class="flex flex-wrap items-center justify-between py-4 px-6 mt-6">
-                    <p class="text-blue-blue leading-[19px] mb-2">Showing 1 to 10 of 57 entries</p>
-                    <nav class="ms-2">
-                      <ul class="pagination flex space-x-1">
-                        <li class="page-item">
-                            <a class="page-link block p-[10px] bg-transparent rounded-full hover:bg-whitesmoke-whitesmoke active:bg-whitesmoke-whitesmoke" href="javascript:void(0)">                            
-                                <img src="assets/images/ArrowLeftpagination.svg" alt="img.." class="">
-                            </a>
-                        </li>
-                        <li class="page-item">
-                          <a class="page-link block p-[10px] bg-transparent text-blue-blue rounded-full !leading-5 hover:bg-green-green active:bg-green-green" href="javascript:void(0)">01</a>
-                        </li>
-                        <li class="page-item">
-                            <a class="page-link block p-[10px] bg-transparent text-blue-blue rounded-full !leading-5 hover:bg-green-green active:bg-green-green" href="javascript:void(0)">02</a>
-                        </li>
-                        <li class="page-item">
-                            <a class="page-link block p-[10px] bg-transparent text-blue-blue rounded-full !leading-5 hover:bg-green-green active:bg-green-green" href="javascript:void(0)">03</a>
-                        </li>
-                        <li class="page-item">
-                            <a class="page-link block p-[10px] bg-transparent text-blue-blue rounded-full !leading-5 hover:bg-green-green active:bg-green-green" href="javascript:void(0)">04</a>
-                        </li>
-                        <li class="page-item">
-                            <a class="page-link block p-[10px] bg-transparent text-blue-blue rounded-full !leading-5 hover:bg-green-green active:bg-green-green" href="javascript:void(0)">05</a>
-                        </li>
-                        <li class="page-item">
-                          <a class="page-link block p-[10px] bg-transparent rounded-full hover:bg-whitesmoke-whitesmoke active:bg-whitesmoke-whitesmoke" href="#">                            
-                            <img src="assets/images/Arrowrightpagination.svg" alt="img.." class="" width="20" height="20">
-                          </a>
-                        </li>
-                      </ul>
-                    </nav>
-                </div>                  
+                <div class="accordion" id="accordionExample">
+                    <!-- Top Sources -->
+                    <div class="border border-palegray-palegray rounded-rouundedllg mt-6 mb-6">
+                      <h2 class="mb-0">
+                        <button class="accordion-button flex justify-between items-center w-full py-4 pr-4 pl-6 text-left text-blue-blue focus:outline-none text-2xl leading-7 font-bold" type="button" data-bs-target="#collapseTopsources">
+                          Top Sources
+                          <svg class="w-4 h-4 transform transition-transform duration-300" id="iconTopsources" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                          </svg>
+                        </button>
+                      </h2>
+                      <div id="collapseTopsources" class="accordion-collapse hidden" aria-labelledby="headingTopsources">
+                        <div class="accordion-body p-6 md:p-10 bg-white-white rounded-rouundedllg border-t border-palegray-palegray rounded-t-none">
+                            <div class="flex flex-wrap gap-6 xxl:gap-x-[115px] gap-y-10">
+                                <!-- Social Media Item 1 -->
+                                <div class="flex flex-col items-center text-center min-w-[44%] md:min-w-[30%] lg:min-w-[150px]">
+                                  <a href="#">
+                                    <img src="./assets/images/icon-ft-insta.svg" alt="Instagram" class="mb-4 transition-opacity duration-300 hover:opacity-75 mx-auto" width="48" height="48" width="48" height="48">
+                                    <p class="mb-1 text-blue-blue text-base !leading-[19px] font-semibold">Instagram</p>
+                                    <p class="mb-0 text-lightgrey-lightgrey font-normal text-lg !leading-[21px]">54% User</p>
+                                  </a>
+                                </div>
+                                <!-- Social Media Item 2 -->
+                                <div class="flex flex-col items-center text-center min-w-[44%] md:min-w-[30%] lg:min-w-[150px]">
+                                  <a href="#">
+                                    <img src="./assets/images/icon-ft-fb.svg" alt="Facebook" class="mb-4 transition-opacity duration-300 hover:opacity-75 mx-auto" width="48" height="48">
+                                    <p class="mb-1 text-blue-blue text-base !leading-[19px] font-semibold">Facebook</p>
+                                    <p class="mb-0 text-lightgrey-lightgrey font-normal text-lg !leading-[21px]">54% User</p>
+                                  </a>
+                                </div>
+                                <!-- Social Media Item 3 -->
+                                <div class="flex flex-col items-center text-center min-w-[44%] md:min-w-[30%] lg:min-w-[150px]">
+                                  <a href="#">
+                                    <img src="./assets/images/icon-ft-x.svg" alt="X" class="mb-4 transition-opacity duration-300 hover:opacity-75 mx-auto" width="48" height="48">
+                                    <p class="mb-1 text-blue-blue text-base !leading-[19px] font-semibold">X</p>
+                                    <p class="mb-0 text-lightgrey-lightgrey font-normal text-lg !leading-[21px]">54% User</p>
+                                  </a>
+                                </div>
+                                <!-- Social Media Item 4 -->
+                                <div class="flex flex-col items-center text-center min-w-[44%] md:min-w-[30%] lg:min-w-[150px]">
+                                  <a href="#">
+                                    <img src="./assets/images/icon-ft-tiktalk.svg" alt="TikTok" class="mb-4 transition-opacity duration-300 hover:opacity-75 mx-auto" width="48" height="48">
+                                    <p class="mb-1 text-blue-blue text-base !leading-[19px] font-semibold">TikTok</p>
+                                    <p class="mb-0 text-lightgrey-lightgrey font-normal text-lg !leading-[21px]">54% User</p>
+                                  </a>
+                                </div>
+                                <!-- Social Media Item 5 -->
+                                <div class="flex flex-col items-center text-center min-w-[44%] md:min-w-[30%] lg:min-w-[150px]">
+                                  <a href="#">
+                                    <img src="./assets/images/icon-ft-yt.svg" alt="YouTube" class="mb-4 transition-opacity duration-300 hover:opacity-75 mx-auto" width="48" height="48">
+                                    <p class="mb-1 text-blue-blue text-base !leading-[19px] font-semibold">YouTube</p>
+                                    <p class="mb-0 text-lightgrey-lightgrey font-normal text-lg !leading-[21px]">54% User</p>
+                                  </a>
+                                </div>
+                                <!-- Social Media Item 6 -->
+                                <div class="flex flex-col items-center text-center min-w-[44%] md:min-w-[30%] lg:min-w-[150px]">
+                                  <a href="#">
+                                    <img src="./assets/images/icon-ft-link.svg" alt="LinkedIn" class="mb-4 transition-opacity duration-300 hover:opacity-75 mx-auto" width="48" height="48">
+                                    <p class="mb-1 text-blue-blue text-base !leading-[19px] font-semibold">LinkedIn</p>
+                                    <p class="mb-0 text-lightgrey-lightgrey font-normal text-lg !leading-[21px]">54% User</p>
+                                  </a>
+                                </div>
+                            </div>                              
+                        </div>
+                      </div>
+                    </div>
+                
+                    <!-- Top Devices -->
+                    <!-- <div class="border border-palegray-palegray rounded-rouundedllg mt-6 mb-6">
+                      <h2 class="mb-0">
+                        <button class="accordion-button flex justify-between items-center w-full py-4 pr-4 pl-6 text-left text-blue-blue focus:outline-none text-2xl leading-7 font-bold" type="button" data-bs-target="#collapseTopdevices">
+                          Top Devices
+                          <svg class="w-4 h-4 transform transition-transform duration-300" id="iconTopdevices" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                          </svg>
+                        </button>
+                      </h2>
+                      <div id="collapseTopdevices" class="accordion-collapse hidden" aria-labelledby="headingTopdevices">
+                        <div class="accordion-body p-6 md:p-10 bg-white-white rounded-rouundedllg border-t border-palegray-palegray rounded-t-none">
+                            <div class="flex flex-wrap gap-6 xxl:gap-x-[115px] gap-y-10">
+                                
+                                <div class="flex flex-col items-center text-center min-w-[44%] md:min-w-[30%] lg:min-w-[150px]">
+                                  <a href="#">
+                                    <img src="./assets/images/icon-ft-insta.svg" alt="Instagram" class="mb-4 transition-opacity duration-300 hover:opacity-75 mx-auto" width="48" height="48" width="48" height="48">
+                                    <p class="mb-1 text-blue-blue text-base !leading-[19px] font-semibold">Instagram</p>
+                                    <p class="mb-0 text-lightgrey-lightgrey font-normal text-lg !leading-[21px]">54% User</p>
+                                  </a>
+                                </div>
+                                
+                                <div class="flex flex-col items-center text-center min-w-[44%] md:min-w-[30%] lg:min-w-[150px]">
+                                  <a href="#">
+                                    <img src="./assets/images/icon-ft-fb.svg" alt="Facebook" class="mb-4 transition-opacity duration-300 hover:opacity-75 mx-auto" width="48" height="48">
+                                    <p class="mb-1 text-blue-blue text-base !leading-[19px] font-semibold">Facebook</p>
+                                    <p class="mb-0 text-lightgrey-lightgrey font-normal text-lg !leading-[21px]">54% User</p>
+                                  </a>
+                                </div>
+                                
+                                <div class="flex flex-col items-center text-center min-w-[44%] md:min-w-[30%] lg:min-w-[150px]">
+                                  <a href="#">
+                                    <img src="./assets/images/icon-ft-x.svg" alt="X" class="mb-4 transition-opacity duration-300 hover:opacity-75 mx-auto" width="48" height="48">
+                                    <p class="mb-1 text-blue-blue text-base !leading-[19px] font-semibold">X</p>
+                                    <p class="mb-0 text-lightgrey-lightgrey font-normal text-lg !leading-[21px]">54% User</p>
+                                  </a>
+                                </div>
+                                
+                                <div class="flex flex-col items-center text-center min-w-[44%] md:min-w-[30%] lg:min-w-[150px]">
+                                  <a href="#">
+                                    <img src="./assets/images/icon-ft-tiktalk.svg" alt="TikTok" class="mb-4 transition-opacity duration-300 hover:opacity-75 mx-auto" width="48" height="48">
+                                    <p class="mb-1 text-blue-blue text-base !leading-[19px] font-semibold">TikTok</p>
+                                    <p class="mb-0 text-lightgrey-lightgrey font-normal text-lg !leading-[21px]">54% User</p>
+                                  </a>
+                                </div>                                
+                            </div>                              
+                        </div>
+                      </div>
+                    </div> -->
+                
+                    <!-- Top Cities -->
+                    <!-- <div class="border-b border-gray-200">
+                      <h2 class="mb-0">
+                        <button class="accordion-button flex justify-between items-center w-full py-3 px-4 text-left text-gray-700 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500" type="button" data-bs-target="#collapseTopcities">
+                          Top Cities
+                          <svg class="w-4 h-4 transform transition-transform duration-300 rotate-180" id="iconTopcities" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                          </svg>
+                        </button>
+                      </h2>
+                      <div id="collapseTopcities" class="accordion-collapse block" aria-labelledby="headingTopcities">
+                        <div class="accordion-body p-4 bg-white">
+                          <div class="accordion-socialmedia">
+                            <div class="social-wraper mb-4">
+                              <a href="#">
+                                <img src="./assets/images/usflag.png" alt="img.." class="img-fluid" width="48" height="48">
+                                <p class="mb-1 lh-19px mt-3 text-blue">United States</p>
+                                <p class="mb-0 lh-21px text-ligthgray">54% User</p>
+                              </a>
+                            </div>
+                            <div class="social-wraper mb-4">
+                              <a href="#">
+                                <img src="./assets/images/chinaflag.png" alt="img.." class="img-fluid" width="48" height="48">
+                                <p class="mb-1 lh-19px mt-3 text-blue">China</p>
+                                <p class="mb-0 lh-21px text-ligthgray">54% User</p>
+                              </a>
+                            </div>
+                            <div class="social-wraper mb-4">
+                              <a href="#">
+                                <img src="./assets/images/moscowflag.png" alt="img.." class="img-fluid" width="48" height="48">
+                                <p class="mb-1 lh-19px mt-3 text-blue">Russia</p>
+                                <p class="mb-0 lh-21px text-ligthgray">54% User</p>
+                              </a>
+                            </div>
+                            <div class="social-wraper mb-4">
+                              <a href="#">
+                                <img src="./assets/images/indiaflag.png" alt="img.." class="img-fluid" width="48" height="48">
+                                <p class="mb-1 lh-19px mt-3 text-blue">India</p>
+                                <p class="mb-0 lh-21px text-ligthgray">54% User</p>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div> -->
+                
+                    <!-- Top Countries -->
+                    <!-- <div class="border-b border-gray-200">
+                      <h2 class="mb-0">
+                        <button class="accordion-button flex justify-between items-center w-full py-3 px-4 text-left text-gray-700 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500" type="button" data-bs-target="#collapseTopcountries">
+                          Top Countries
+                          <svg class="w-4 h-4 transform transition-transform duration-300" id="iconTopcountries" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                          </svg>
+                        </button>
+                      </h2>
+                      <div id="collapseTopcountries" class="accordion-collapse hidden" aria-labelledby="headingTopcountries">
+                        <div class="accordion-body p-4 bg-white">
+                          Content here
+                        </div>
+                      </div>
+                    </div> -->
+                  </div>
             </section>
             <footer class="p-4 bg-white-white">
                 <p class="font-bold text-sm text-center !leading-4">© 2024 Linkfluencer</p>
             </footer>
         </main>
-    </div>
-    <div class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden items-center justify-center px-4" id="modal-container">
-        <div
-            class="relative w-full max-w-[584px] mx-auto rounded-[10px] border border-palegray-palegray bg-white-white p-5 lg:px-10 lg:pb-10 pt-6">
-            <div class="flex justify-between items-center">
-                <div class="text-xl lg:text-2xl !leading-7 text-blue-blue capitalize font-bold">Edit Link
-                </div>
-                <button class=" rounded-full p-1" onclick="toggleModal()">
-                    <img src="assets/images/closeicon.svg" alt="close icon" width="25" height="25">
-                </button>
-            </div>
-            <hr class="h-[1px] my-3 lg:my-6 bg-darkblue-darkblue border-0 dark:bg-white-white">
-            <div class="mb-6">
-                <label class="block text-blue-blue font-bold mb-2 text-xl !leading-6 capitalize"
-                    for="paste-link">Prefix</label>
-                <input type="text"
-                    class="appearance-none border border-blue-blue rounded w-full py-5 px-6 text-lightgrey-lightgrey bg-cultured-cultured text-lg font-bold !leading-5 focus:outline-none focus:shadow-outline"
-                    placeholder="enter prefix">
-            </div>
-            <div class="mb-6">
-                <label class="block text-blue-blue font-bold mb-2 text-xl !leading-6 capitalize" for="paste-link">Smart
-                    code *</label>
-                <input type="text"
-                    class="appearance-none border border-blue-blue rounded w-full py-5 px-6 text-lightgrey-lightgrey bg-cultured-cultured text-lg font-bold !leading-5 focus:outline-none focus:shadow-outline"
-                    placeholder="enter prefix">
-            </div>
-            <div class="mb-6">
-                <label class="block text-blue-blue font-bold mb-2 text-xl !leading-6 capitalize"
-                    for="paste-link">Tags</label>
-                <select id=""
-                    class="appearance-none border border-blue-blue rounded w-full py-5 px-6 text-lightgrey-lightgrey bg-cultured-cultured text-lg font-bold !leading-5 focus:outline-none focus:shadow-outline bg-[url('../../assets/images/Filters.svg')] bg-no-repeat bg-custompositionedit">
-                    <option selected>Choose a link</option>
-                    <option value="link">one</option>
-                    <option value="link">two</option>
-                </select>
-            </div>
-            <button
-                class="btn-green text-white-white font-bold py-4 px-10 text-2xl !leading-7 rounded-md capitalize w-full">
-                Update Link
-            </button>
-        </div>
     </div>
     <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
     <script src="assets/js/script.js"></script>

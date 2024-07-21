@@ -262,3 +262,34 @@ function toggleModal() {
   modalContainer.classList.toggle('flex');
   document.body.classList.toggle('overflow-hidden');
 }
+
+// accordian analytic page
+document.addEventListener('DOMContentLoaded', () => {
+  const accordionButtons = document.querySelectorAll('.accordion-button');
+
+  accordionButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const targetId = button.getAttribute('data-bs-target');
+      const target = document.querySelector(targetId);
+      const icon = button.querySelector('svg');
+
+      // Toggle the accordion
+      if (target.classList.contains('block')) {
+        target.classList.remove('block');
+        target.classList.add('hidden');
+        icon.classList.remove('rotate-180');
+      } else {
+        document.querySelectorAll('.accordion-collapse').forEach(item => {
+          item.classList.add('hidden');
+          item.classList.remove('block');
+        });
+        document.querySelectorAll('.accordion-button svg').forEach(icon => {
+          icon.classList.remove('rotate-180');
+        });
+        target.classList.remove('hidden');
+        target.classList.add('block');
+        icon.classList.add('rotate-180');
+      }
+    });
+  });
+});
