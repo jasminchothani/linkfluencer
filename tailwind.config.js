@@ -80,6 +80,9 @@ module.exports = {
         },
         greenlight: {
           greenlight: 'var(--greenlight)',
+        },
+        midnightblue: {
+          midnightblue: 'var(--midnightblue)',
         }
       },
       // backgroundColor: {
